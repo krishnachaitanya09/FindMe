@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="0008b114-7c39-4d13-9ca9-aa2e676658e7"
+  name="Http"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="845b8f74-34fd-45ff-a77f-33c98b7ce6ca"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSystem.Net.Http"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="a3b48915-e1b4-44c8-80ef-2ffd99f9b92f"
+        name="HttpResponseMessage"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="b3952bfe-385e-4724-8081-a5cec7e37a0e"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2Fprojects%2FGpsTracker%2FGpsTracker%2Fpackages%2FMicrosoft.Net.Http.2.2.28%2Flib%2Fsl4-windowsphone71%2FSystem.Net.Http.dll Namespace%3DSystem.Net.Http Type%3DHttpResponseMessage"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="7dbcecd7-c680-4feb-93a8-5bcbe17ead78"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cc38e3a7-9181-4e36-9a42-62317bbc682a">
+                <propertyInstance
+                  Id="b8fde0f1-f8c7-4019-a3d3-251e0d7d16f6"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b9e9084d-8001-498f-bf58-2024f32db365">
+                <propertyInstance
+                  Id="776100ae-3eb4-43dd-bbf2-8c759440a9fa"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="85bd594b-22d7-41c0-a87d-06ef1024ac47">
+                <propertyInstance
+                  Id="57ac9758-8283-4dc5-9734-00fa80a7a831"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="285fad6d-a92c-46b8-8413-b2ff8b9272ab">
+                <propertyInstance
+                  Id="1780548c-e7bc-4749-9679-0a7a8323e59f"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bc1f6b04-8a18-4ed2-9e1d-0ca7e2c6bb2d">
+                <propertyInstance
+                  Id="71404919-321c-4806-904c-e6b6d9bc0193"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c8613d21-552e-4a6a-b9ed-e272a49c1da5"
+        name="HttpContent"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="017d44c3-d3ac-4876-a1c6-bdf266104e0e"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2Fprojects%2FGpsTracker%2FGpsTracker%2Fpackages%2FMicrosoft.Net.Http.2.2.28%2Flib%2Fsl4-windowsphone71%2FSystem.Net.Http.dll Namespace%3DSystem.Net.Http Type%3DHttpContent"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3d1a9e01-49b8-436a-98a4-58a20182a211"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a7e54d71-c439-4f60-9c49-f405c83df3d6">
+                <propertyInstance
+                  Id="52cdca69-5cc1-4835-a879-12ca06c480d0"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="efbdc3b2-8e9d-49cb-a22c-30c271e3f61a">
+                <propertyInstance
+                  Id="b989a4e8-2b35-4000-a756-3e647c3a4e04"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="09f390df-89c7-4369-b80d-cec3a59f9cb3">
+                <propertyInstance
+                  Id="5294257a-3416-403f-8c1f-4d9a67e2fced"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f0477fcb-0c50-44ba-8faa-e8c2d66bc3ee">
+                <propertyInstance
+                  Id="8823db41-4db5-45a3-8b1c-87684962616c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="825e5e6d-62af-4238-8c04-f5d823c8e5ea">
+                <propertyInstance
+                  Id="91f0fa47-9444-44b5-aa3e-5c46ce6c5fc9"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="982b2f5c-e92b-4837-8033-a60799b82a87"
+        name="MultipartFormDataContent"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="1363c746-8e83-4e1f-9281-9a2db136ad24"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2Fprojects%2FGpsTracker%2FGpsTracker%2Fpackages%2FMicrosoft.Net.Http.2.2.28%2Flib%2Fsl4-windowsphone71%2FSystem.Net.Http.dll Namespace%3DSystem.Net.Http Type%3DMultipartFormDataContent"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="738bb2d5-a346-4900-b2c5-ca83f2c2f909"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c30dc891-fe4c-4fdd-b600-463c2225ead6">
+                <propertyInstance
+                  Id="1dcb0c19-8ba3-4930-b6d8-69d1ff5dc24d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d193d8e5-7d5e-4b86-a564-ff6990f3f2ae">
+                <propertyInstance
+                  Id="64ed8ebe-f644-4123-a19e-7f60146e8d55"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="23dc138c-b116-41b2-8a3e-2adcf49b3a23">
+                <propertyInstance
+                  Id="20f57647-4291-4fe6-a617-5d3d5dec316e"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="af021bff-4f81-4668-ad6e-ce0ac778b1c8">
+                <propertyInstance
+                  Id="daf74d84-1fdf-43c2-8d4d-7a15f624617c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="caf116d5-5e0c-45f0-9343-4f3ed8225fb8">
+                <propertyInstance
+                  Id="583f50b4-9279-4d5c-a99c-202c524e29ea"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="80e493e1-3580-4650-9212-12bae35f041c"
+        name="HttpClient"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="b0ff7075-ba5c-4132-be7b-6b0d0a29f29f"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2Fprojects%2FGpsTracker%2FGpsTracker%2Fpackages%2FMicrosoft.Net.Http.2.2.28%2Flib%2Fsl4-windowsphone71%2FSystem.Net.Http.dll Namespace%3DSystem.Net.Http Type%3DHttpClient"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="23bb3bf9-222f-4cda-8865-838dba5af895"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d3ede8ad-e5c1-40ed-9f2e-a66a02aafb49">
+                <propertyInstance
+                  Id="c9ad0b98-e6cf-4866-a1cb-d46b3a146d42"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b07375e3-d677-4c5d-abbd-0ec34c70f6bd">
+                <propertyInstance
+                  Id="5d411484-2d7b-430c-b956-90654ec79180"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="48147d61-9419-4b50-ac50-5d06b394fe11">
+                <propertyInstance
+                  Id="5a4d19b1-cc81-4753-8b36-90462cf34bdf"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="89c9bbac-e653-4f9c-8210-57f45325358b">
+                <propertyInstance
+                  Id="1f4be327-60e0-42bb-999e-b7cbbcb57f70"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6d5df11f-98f7-4681-8db5-4702d62b6a5c">
+                <propertyInstance
+                  Id="0b5d5a21-e4ef-4c3b-bb36-d6d4785dcf50"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

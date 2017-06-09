@@ -1,0 +1,138 @@
+﻿@model GPSServer.Models.CrowdSource
+
+@{
+    Layout = null;
+    ViewBag.Title = "Report Incident";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/datetime")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/crowdsource")
+
+    <script>
+        $(document).ready(function () {
+            $(function () {
+                if ($("#ThreatId").val() == 5) {
+
+                    $('#Threat_other').show();
+                }
+                else {
+                    $('#Threat_other').hide();
+                }
+            });
+
+            $("#ThreatId").change(function () {
+                if (this.value == 5) {
+                    $('#Threat_other').show();
+                }
+                else {
+                    $('#Threat_other').hide();
+                }
+            });
+
+            $.validator.methods["date"] = function (value, element) { return true; }
+
+            $('#Date').datetimepicker({
+                formatTime: 'g:i A',
+                format: 'd/m/Y h:i A',
+                maxDate: 0
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                @Html.ActionLink("FindMe", "Index", "CrowdSource", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <h2>Report Incident</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <p>We are developing a real-time location sharing and hazard notification service. People like you using the mobile app contribute by sharing data on accidents, assault, or any other hazards along the way, helping to give other users in the area a 'heads-up' about what's to come. In this ambitious attempt we need your help in collecting the incidents that you have witnessed in and around your neighborhood  or at any place that you have visited.</p>
+                <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Ftechcryptic.com%2Ffindme%2Fcrowdsource%2F&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=35&amp;appId=585194124892292" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowtransparency="true"></iframe>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-10">
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="form-horizontal">
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        @Html.HiddenFor(model => model.Latitude)
+                        @Html.HiddenFor(model => model.Longitude)
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Threat, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.DropDownList("ThreatId", null, "Select an incident", htmlAttributes: new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.ThreatId, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div id="Threat_other" class="form-group" style="display: none;">
+                            <div class="col-md-10 col-md-offset-2">
+                                @Html.EditorFor(model => model.Threat.Type, new { htmlAttributes = new { @class = "form-control", @placeholder = "Enter the incident", @autocomplete = "off" } })
+                                @Html.ValidationMessage("Others", "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Date, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Date, new { htmlAttributes = new { @class = "form-control", @placeholder = "Enter the date", @autocomplete = "off" } })
+                                @Html.ValidationMessageFor(model => model.Date, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Location, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-5">
+                                @Html.TextBoxFor(model => model.Location, new { @class = "form-control", @placeholder = "Enter a location", @autocomplete = "off" })
+                                @Html.ValidationMessageFor(model => model.Location, "", new { @class = "text-danger" })
+                                <div id="locationPicker" style="width:100%; height:350px; margin-top:15px; margin-bottom:15px;"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="submit" value="Submit" class="btn btn-default" />
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <footer class="footer">
+            <p>&copy; @DateTime.Now.Year - FindMe</p>
+        </footer>
+
+    </div>
+
+    @Scripts.Render("~/bundles/bootstrap")
+    <script type="text/javascript" src='http://maps.google.com/maps/api/js?sensor=false&libraries=places'></script>
+    <script>
+        $('#locationPicker').locationpicker({
+            location: { latitude: 17.385044, longitude: 78.486671 },
+            locationName: "Hyderabad, Telangana",
+            radius: 200,
+            zoom: 15,
+            scrollwheel: true,
+            inputBinding: {
+                latitudeInput: $('#Latitude'),
+                longitudeInput: $('#Longitude'),
+                locationNameInput: $('#Location')
+            },
+            enableAutocomplete: true,
+            draggable: true
+        });
+    </script>
+</body>
+</html>

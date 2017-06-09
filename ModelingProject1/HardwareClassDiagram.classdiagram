@@ -1,0 +1,1925 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="2297a38c-2830-4df7-b62d-a41d658475d6" name="HardwareClassDiagram" linkedPackageId="821ffaa4-0bf5-4019-9951-9015046ece28" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="0fcb4bcc-be28-47e4-ab84-49eb8ba4281a">
+      <profileInstance Id="1a6d7822-4479-4723-be4e-4ec3932bf751" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="11323c22-7142-4b97-a9e7-4f13a0699d54">
+      <profileInstance Id="6a6c0145-987f-4398-82bc-9baaeb143918" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="544e8bdf-64e0-4214-95d8-424461a9ce75">
+      <profileInstance Id="469f792b-aedf-4454-9d32-af0193328bac" name="CSharpProfile">
+        <elementDefinition Id="0cdd7879-024d-4dad-b8a8-f490a6796b5c" />
+      </profileInstance>
+      <elementDefinition Id="11a6bf9f-f991-415d-b618-246e07530282" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="8289b6bb-5c39-44e9-8eb4-c05cbb31ccb5">
+      <profileInstance Id="9c5e763e-b4a2-4f0b-ba4e-a8df299787e9" name="TextTemplateBindings">
+        <elementDefinition Id="6bf54a53-0ac1-451a-8939-7f850fb62d74" />
+      </profileInstance>
+      <elementDefinition Id="2d3c1c2c-38d1-440b-9968-beeb2a6b86ba" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="92d51e59-d519-46d1-859c-2a1570e7dd56" name="Hardware" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="94c772cc-e7bb-4eb8-9718-ac2ce57976d8" />
+        <suppliersInternal>
+          <dependency Id="3f8d54cc-13c5-4dd9-860a-9f474627e002">
+            <classMoniker Id="8b36034f-1d7e-46aa-89f6-beb56de04d07" LastKnownName="HardwareSettingsPage" />
+            <elementDefinition Id="9773a5d3-7cac-4df9-ae76-b599d179dc5b" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="0ef26f74-2f13-45ce-8abb-845b73b1a44a" name="Lights_ON" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="719d2819-c0f5-47f8-9011-1ed9873bf646" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="285d5add-1a4f-4b6b-b83d-fbd72894698f" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
+          <property Id="8e5683fc-17b5-417e-ae1e-05594c075d16" name="Display_ON" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6af1c7f5-3092-4468-ae9e-550d54f59f13" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3c3d0b1b-be62-434a-aba1-b8cb76431a22" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
+          <property Id="5ffa92af-0234-42e8-85f6-9ed4aa84b325" name="Message" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="21e92005-c06a-4146-8903-34966676e3dd" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="fa57cbb6-2512-4a4e-b233-16f368c79780" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="10be3d38-47c3-4b3c-832c-39904df3e435" name="noteDurations[]" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ec16f2ca-be26-483f-8234-d5c6d09e0d9d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="be5d4d61-1c2c-4c87-9287-29a7c1d615d1" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="b7aef1ff-1592-4496-b09d-f7d61ca10d9a" name="initialPos" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8594f49e-0b1a-41d3-8601-ab77f0677bbe" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="fed31638-93a6-47d1-82bb-a0a9853a19f0" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="e287fed7-ed63-4d28-863c-875ab3b1e9b7" name="messagePos" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6423b48f-7097-4b9f-8afc-7502a94440f7" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a1df2e17-bd2f-4c33-b697-7bf284189607" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="daed75bb-fce6-43ab-adf0-0d0ac34abfaf" name="cursorPos" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="89bf5aba-1b4d-4635-978f-dadbd45a9540" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="bc2e868e-c529-4172-b33c-affe4f586045" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="90029dbc-fc3f-4953-8ab1-83865f43c8b9" name="setup" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="62e4c28b-1b02-4220-9be8-8b38a7179257" />
+          </operation>
+          <operation Id="e52f5162-7470-4423-ab89-84cc27c37da9" name="loop" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2f58d586-e24f-4e4d-8b9d-d5d3297dcb12" />
+          </operation>
+          <operation Id="071c5d11-06f8-4886-aba6-8a521007226d" name="printMessage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="be8ea882-a98b-4681-adc4-1b0e51c379bf" />
+          </operation>
+          <operation Id="9ea0a7e1-0e8b-419c-b6f0-66ff6b8d32fe" name="refreshDate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e2bee3a0-0156-4c72-a4f0-33b2dc40eea5" />
+          </operation>
+          <operation Id="714a9754-46f4-4f39-9c26-a8cec6da85a2" name="processCommand" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c4dd11a5-a7af-4ad2-b458-155125291068" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="95982dcf-7918-4d66-9bdf-8038b4807935" name="command" direction="In" isUnique="false">
+                  <elementDefinition Id="bdfbb1e4-9a44-4497-9f78-2fd3b30de44b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="dd732273-8bbe-41bb-afbe-e988326b8fc5" LastKnownName="char*" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="605579ea-bd2c-4f8d-9e91-0b6358db1f27" name="sendMessage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="94cc2a4d-99f0-4110-a2ce-8dd9c7d5c0c1" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="aaf6c11e-7f74-4609-820c-783054d16b4f" name="message" direction="In" isUnique="false">
+                  <elementDefinition Id="f018d918-44a7-4281-a81e-e27f6623bc49" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="fa57cbb6-2512-4a4e-b233-16f368c79780" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="1b2cb85a-0fd3-49f4-9155-2238777eb547" name="serialEvent" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0903ad20-9086-4f52-ad68-dec75812f050" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="fa57cbb6-2512-4a4e-b233-16f368c79780" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="dd732273-8bbe-41bb-afbe-e988326b8fc5" name="char*" isAbstract="false" isLeaf="false" cachedFullName="char*">
+        <elementDefinition Id="efbece0e-008a-4eca-a4f0-0b3afacfe8e0" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3c3d0b1b-be62-434a-aba1-b8cb76431a22" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="bc2e868e-c529-4172-b33c-affe4f586045" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="fed31638-93a6-47d1-82bb-a0a9853a19f0" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="285d5add-1a4f-4b6b-b83d-fbd72894698f" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a1df2e17-bd2f-4c33-b697-7bf284189607" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="be5d4d61-1c2c-4c87-9287-29a7c1d615d1" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8b36034f-1d7e-46aa-89f6-beb56de04d07" name="HardwareSettingsPage" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="101fab98-782f-4446-a330-fc1474aafa4f" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage" tag="ViewCode">
+            <elementDefinition Id="ea03a82b-dcf9-45c9-8433-3adf96bd64a5" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="fe745fdb-d772-4d7f-b050-c6b01d8b67e3" name="class" profile="CSharpProfile">
+            <elementDefinition Id="4daeff73-5477-4ba7-aeec-14020583dfb2" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="ef335244-2123-44bc-b772-5de9ec1ff6fd">
+                <propertyInstance Id="b4494ed7-3bf0-45d5-b79c-717c8edb027f" name="ClrAttributes">
+                  <elementDefinition Id="bf844996-b4ae-4937-9192-155289ed6f35" />
+                </propertyInstance>
+                <elementDefinition Id="4e805ab7-08a1-464f-9365-e9b22c16fa35" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="1840e086-2bde-47e0-9d6c-57abe406080e">
+                <propertyInstance Id="ef3df271-6481-4d07-b0df-028938f3b595" name="IsPartial" value="false">
+                  <elementDefinition Id="f33cc736-c300-4002-9e1c-8e175c72a0f1" />
+                </propertyInstance>
+                <elementDefinition Id="39030cea-ea64-404c-81a7-3579d2e37df6" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="a97d2d9e-a309-4253-aa78-f61a6d271ca3">
+                <propertyInstance Id="08072e0a-6997-44b9-abf2-d2117f6531be" name="IsStatic" value="False">
+                  <elementDefinition Id="b9bc21b2-414b-4ee1-9213-fc8e97bf5bc8" />
+                </propertyInstance>
+                <elementDefinition Id="da9e114e-be8c-4a21-855a-ac2ae85188c5" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="b5d7dd82-945a-4825-8f08-3227a7f2072c">
+                <propertyInstance Id="fc72a65d-a17b-4354-b091-857197ae8db9" name="IsUnsafe" value="false">
+                  <elementDefinition Id="f08f8e56-a17e-4875-8d51-29983458a342" />
+                </propertyInstance>
+                <elementDefinition Id="e22a6a03-fb19-4635-8292-4ff6835e91e1" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="f5feee3b-d7dd-41cd-9185-5e3a2e8f04ad">
+                <propertyInstance Id="df8303c2-1f53-44f4-b4ce-2d16e55fb9ea" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="2accb8a1-9286-4cd4-b976-46996c8fc01f" />
+                </propertyInstance>
+                <elementDefinition Id="1d3a610a-0c02-4a72-877c-cdc840e17a70" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="7b3a2d7a-cc34-4523-b6ad-fb7e86d38884" />
+        <suppliersInternal>
+          <dependency Id="b12e9433-a4a6-4455-9ab7-59bda4c7bdcb">
+            <classMoniker Id="92d51e59-d519-46d1-859c-2a1570e7dd56" LastKnownName="Hardware" />
+            <elementDefinition Id="eb2bc5c1-2979-4c1b-a963-1bc33d1222d0" />
+          </dependency>
+          <dependency Id="8c174071-7832-4e94-8cab-b963c76d6ec9">
+            <classMoniker Id="0b52d8fe-aad9-456d-a58a-92374b8c5d92" LastKnownName="BluetoothConnectionManager" />
+            <elementDefinition Id="daa4f633-3fc0-4276-9b5b-d8a67320ccca" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="975e8671-1697-45c4-81e3-5f5c1b4bfd5e" name="ContentPanel" visibility="Package" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="27fddadd-521b-4270-a345-6bb5a842e2a8" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage Member%3DContentPanel" tag="ViewCode">
+                <elementDefinition Id="d0927529-66e0-4812-9a80-8d56fa396183" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="005928ff-a1c9-4744-8cbb-5fadc58f5080" name="field" profile="CSharpProfile">
+                <elementDefinition Id="ea250d6d-ec98-464d-a4be-3952491ec559" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2fe5e550-79c9-4d39-9d15-c5b1d2f85cf4">
+                    <propertyInstance Id="2ff06314-6814-404f-ab7d-e39333612504" name="ClrAttributes">
+                      <elementDefinition Id="e52cf150-ea3c-4994-a2a1-e45f031f3e81" />
+                    </propertyInstance>
+                    <elementDefinition Id="8050ff59-ba51-4d55-9455-44b0094cbe84" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="516d08c5-42ab-40db-9b57-eb301ece4530">
+                    <propertyInstance Id="e8447f3f-8c6c-4441-bef8-8aad1921b843" name="IsConst" value="false">
+                      <elementDefinition Id="72db1564-609e-4c93-9c98-a03ebd9b9de6" />
+                    </propertyInstance>
+                    <elementDefinition Id="71c70767-e0d5-4ae4-af12-0bddcbb43efb" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0ef7991b-c8ad-4e0f-9509-d017c7379346">
+                    <propertyInstance Id="b6f40554-0fb8-4bfd-8b94-eef408b524e7" name="IsNullable" value="false">
+                      <elementDefinition Id="15dea900-5f36-4668-8c24-95c5fdc2815e" />
+                    </propertyInstance>
+                    <elementDefinition Id="330f01d0-ceb9-4aee-9a06-fbbd0e57930a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b3bb7fe4-16ec-42d6-b377-fe93419c44f9">
+                    <propertyInstance Id="a567d75f-e8dc-4d63-bbaf-af6452cbb035" name="IsVolatile" value="false">
+                      <elementDefinition Id="99cb0e80-9799-4a10-abca-ad58381040b0" />
+                    </propertyInstance>
+                    <elementDefinition Id="abc976d9-a025-45f0-9b22-07c499de1b8d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c787084d-c7fe-426b-b276-576c596bd35b">
+                    <propertyInstance Id="276ab3d0-f155-42dc-94eb-9db62eb76016" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="8f81254c-2167-4232-a1cc-7b97057a724a" />
+                    </propertyInstance>
+                    <elementDefinition Id="4cf34619-76c1-41f2-851b-b006d532a656" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="7029ba5d-21b3-424d-934f-29c15b150e7c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="942a614c-a099-443e-bcf4-23b0794a3e1c" LastKnownName="Grid" />
+            </type_NamedElement>
+          </property>
+          <property Id="bea94880-cfa8-4b20-a148-7ba871909b51" name="LayoutRoot" visibility="Package" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="ffe17d15-a2dd-411d-b82e-62fe64aa878b" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage Member%3DLayoutRoot" tag="ViewCode">
+                <elementDefinition Id="30a34aa7-2331-4b02-b86f-7a068704b5eb" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="5d8f50f0-e04b-4509-a88f-c1100b6f6164" name="field" profile="CSharpProfile">
+                <elementDefinition Id="78bd1652-46bd-4512-a6ed-cfa80f7454fe" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="549fc817-e763-421d-81aa-d5ee2e886bb4">
+                    <propertyInstance Id="1bbd5808-02fb-47a9-9754-e7943d6e3435" name="ClrAttributes">
+                      <elementDefinition Id="9795a8e9-2037-4f64-8f3b-77759d786b66" />
+                    </propertyInstance>
+                    <elementDefinition Id="64d08e13-6d60-4d6d-98a5-c6c8c2803d1a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="dfb9d912-2e1c-4b99-a8c2-375d9f2ede32">
+                    <propertyInstance Id="c380fb1b-6022-4dc1-a38e-a2274a96632d" name="IsConst" value="false">
+                      <elementDefinition Id="3a25cd16-1d7a-4940-8aa4-e19ef0d4db91" />
+                    </propertyInstance>
+                    <elementDefinition Id="1fce4a3a-9afd-4caa-a69d-0b3a74117d67" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ab4d9c52-337a-4643-90ee-f09007fb8a79">
+                    <propertyInstance Id="4566e812-eead-4b7a-8db0-6be520ed131b" name="IsNullable" value="false">
+                      <elementDefinition Id="a7aa4176-e108-4c65-8526-8d2a303de21d" />
+                    </propertyInstance>
+                    <elementDefinition Id="8e479ab8-f46b-413f-9798-f701d3a760e7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6044ee51-8fff-49ce-b205-1a162f6c9d16">
+                    <propertyInstance Id="f7a3e71c-e65d-44bb-967b-756155c7dd06" name="IsVolatile" value="false">
+                      <elementDefinition Id="9b16d831-6846-4cfd-a89a-b868f8084a39" />
+                    </propertyInstance>
+                    <elementDefinition Id="efbd7c9d-804e-4cea-9b93-135fd1a51343" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="70d53042-c51a-4ab9-ae75-64e2b5a0af74">
+                    <propertyInstance Id="3f7106e9-9539-4e67-9096-5e92f4e30a26" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="9b8e6687-8889-4ec5-9ac6-65554d1406c1" />
+                    </propertyInstance>
+                    <elementDefinition Id="0cc8422e-1e56-4226-aae2-ab083dcd5cd1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="c43832af-8da1-4ced-aefb-e856366752af" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="942a614c-a099-443e-bcf4-23b0794a3e1c" LastKnownName="Grid" />
+            </type_NamedElement>
+          </property>
+          <property Id="78294e59-5d25-4048-a2a3-384d82eb6224" name="TitlePanel" visibility="Package" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="9a40a862-c820-408f-bbac-a698d3d4675d" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage Member%3DTitlePanel" tag="ViewCode">
+                <elementDefinition Id="2097a330-b614-4f97-b0e9-70a347387cc4" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="91813bf1-fd81-4e70-a350-ec808ded8a53" name="field" profile="CSharpProfile">
+                <elementDefinition Id="79fcc11b-bb6a-4e23-b1b6-5ce303b1e3bd" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e58d279b-127d-4b01-aef8-8698af9af961">
+                    <propertyInstance Id="43aca371-5b17-4a35-bb4f-99cf23cd471c" name="ClrAttributes">
+                      <elementDefinition Id="52793a96-4c86-492a-b77d-4136eaa8885f" />
+                    </propertyInstance>
+                    <elementDefinition Id="8a85ca1d-acd4-4e63-a768-0151569ef56d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="455651c2-562b-48e6-b164-010950bcc92c">
+                    <propertyInstance Id="0211aabf-d030-4561-ae68-6286d05ee841" name="IsConst" value="false">
+                      <elementDefinition Id="7151dd92-02da-42f6-8038-4c9662c34f43" />
+                    </propertyInstance>
+                    <elementDefinition Id="798b0473-1702-48dc-8e4d-24b301e0c9ad" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4616e317-a8ff-4e9f-b1eb-a61743d10856">
+                    <propertyInstance Id="7b886cb3-7041-442b-8c51-32fec92695c8" name="IsNullable" value="false">
+                      <elementDefinition Id="e8ec4b9d-ff16-4e7a-b6ca-552e2013c6fd" />
+                    </propertyInstance>
+                    <elementDefinition Id="62622237-6b64-44ee-aa11-a4eb98bd3ec0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="aa6fb43c-c007-42b2-a4c0-2def38fefd51">
+                    <propertyInstance Id="3772d06c-bed3-4163-a39c-f5b78939610a" name="IsVolatile" value="false">
+                      <elementDefinition Id="aef76bb2-94b7-449d-8d0d-56d9c7cf5c09" />
+                    </propertyInstance>
+                    <elementDefinition Id="e68a8694-fd8d-4ec9-bf70-e4571bfc8cc1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f7752318-4b0f-4db2-9bd1-9be0812260fd">
+                    <propertyInstance Id="e5c88bb3-bcc3-4489-850c-eaf61d0f5572" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="2fc24f26-e142-48e9-9788-82d371803c78" />
+                    </propertyInstance>
+                    <elementDefinition Id="887fb0b6-4938-422e-9377-27be9ba2b7c7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="b09a0041-6cd0-4cde-beb3-461dc0de6d7f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="942a614c-a099-443e-bcf4-23b0794a3e1c" LastKnownName="Grid" />
+            </type_NamedElement>
+          </property>
+          <property Id="7bdbfe9a-e8c1-438c-a474-8870d3701023" name="_contentLoaded" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="0193eeec-6713-4448-9063-286f5dd49388" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage Member%3D_contentLoaded" tag="ViewCode">
+                <elementDefinition Id="102b8e9b-9f39-4a4b-9a7e-144337804ae1" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="372f37e4-2378-4e8e-ac67-affd8ffde069" name="field" profile="CSharpProfile">
+                <elementDefinition Id="6ee30f0e-d4f7-4c19-87b9-51818d89fa02" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c26bee0e-11cf-4c95-be2b-86f564a08735">
+                    <propertyInstance Id="7035dfcb-51dd-4eb2-987a-88fdfbb00911" name="ClrAttributes">
+                      <elementDefinition Id="8046f11e-f12a-4cb7-8088-105878947f55" />
+                    </propertyInstance>
+                    <elementDefinition Id="fd781d02-2a67-48cf-b7fa-8f3dd2b27934" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="bbe849f3-5ccd-4856-b704-d87e0f24be7e">
+                    <propertyInstance Id="d6a08604-25c5-46f9-836c-fe3e2e696409" name="IsConst" value="false">
+                      <elementDefinition Id="60353cf2-1e95-4065-9f8e-11076fb46f9f" />
+                    </propertyInstance>
+                    <elementDefinition Id="80e0aa7f-2d79-4e30-a3ca-abf7cb9d9be8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e1e4d80e-cb97-4e0c-ae66-ad07d99ee338">
+                    <propertyInstance Id="bc70794f-9bc3-45c4-906c-8841b932d7e1" name="IsNullable" value="false">
+                      <elementDefinition Id="3651d3f5-56fd-4166-ae35-55a650420c75" />
+                    </propertyInstance>
+                    <elementDefinition Id="b887e36d-aec8-422f-8e3e-d267f97f8dc4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1e866d35-49a9-4cb7-ad9c-e62ae7668987">
+                    <propertyInstance Id="b8ace6a1-82f5-4299-a0a0-30be9b26cc9a" name="IsVolatile" value="false">
+                      <elementDefinition Id="05934cd0-48c0-4530-b714-7d2ec576cca8" />
+                    </propertyInstance>
+                    <elementDefinition Id="49136134-d10b-4652-8b4e-9155a6c968d9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cc1d913e-5ff1-4732-93e8-c799826f3123">
+                    <propertyInstance Id="87a81ca6-ee34-4ee8-910c-27630c58ee9e" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="0128a99b-20d2-4dc8-84f4-85a18ecc068b" />
+                    </propertyInstance>
+                    <elementDefinition Id="47581656-9647-424c-a2c5-a707c2957e8c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="33097f05-ccc1-43dd-a268-164aa9caacae" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3c3d0b1b-be62-434a-aba1-b8cb76431a22" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
+          <property Id="01194604-c864-416f-8f15-121b80d77ff2" name="connectButton" visibility="Package" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="617ea163-c457-46c6-9f3f-21b2e98c139a" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage Member%3DconnectButton" tag="ViewCode">
+                <elementDefinition Id="97a7316a-f895-4f9d-a74e-324f726d5162" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="3608a7bc-72ff-47b5-afa8-689489c953da" name="field" profile="CSharpProfile">
+                <elementDefinition Id="4cc5ae4f-c2eb-4a69-b985-94999d8ab70a" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="93c8bde3-08e8-4628-99b8-fd679cd1d03f">
+                    <propertyInstance Id="a7085013-dec8-4d58-8865-20164a8974df" name="ClrAttributes">
+                      <elementDefinition Id="0d0f9b36-b06a-41e4-8e39-eff863f12760" />
+                    </propertyInstance>
+                    <elementDefinition Id="61cae0cf-45c5-493d-900e-01689cc6fdc0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="92fe8a46-51ad-48d6-b06a-188e951f6811">
+                    <propertyInstance Id="b36ceb83-b918-4426-af4d-6356fcc9e5bb" name="IsConst" value="false">
+                      <elementDefinition Id="2cd57979-2f18-4f97-8b65-e1b11cf8d5bc" />
+                    </propertyInstance>
+                    <elementDefinition Id="990879ba-8eb9-456a-ab9f-43b192d64802" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="551dad4f-a1e4-4370-8201-b5108c46e7a5">
+                    <propertyInstance Id="9a023174-1de8-4f43-a454-63245b1214c7" name="IsNullable" value="false">
+                      <elementDefinition Id="e03fcc7d-fa67-4350-b73a-19afa1ad25f8" />
+                    </propertyInstance>
+                    <elementDefinition Id="96a71580-ccb5-49f0-ab4b-c229b57ef77a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="81205b77-f83f-4954-b252-6def5e1b17b2">
+                    <propertyInstance Id="578893c4-2bf8-46a1-80bd-6ce8b77ac872" name="IsVolatile" value="false">
+                      <elementDefinition Id="23e41f16-c2e9-4b5a-a95e-26a8154460a5" />
+                    </propertyInstance>
+                    <elementDefinition Id="7a76ba67-4180-4e36-955c-9fc18fd9e19f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="eba23570-a8b3-4d4e-853e-f386c406ada3">
+                    <propertyInstance Id="ce4e262e-7809-45fc-b9e6-10cfb63d2a25" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="bd39d97d-7222-4443-a8da-74ffaa403c10" />
+                    </propertyInstance>
+                    <elementDefinition Id="a996f459-b1e5-41b9-b974-9f52ac2779d0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="b367cd27-3a5a-448f-8090-54f8bfef2027" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f5d79b1b-67c2-40e4-9936-4569bd353fb8" LastKnownName="Button" />
+            </type_NamedElement>
+          </property>
+          <property Id="478dd612-9216-4ae2-93ad-3b261481cbbb" name="connectionManager" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="d1ad5143-441d-4e82-a8eb-5a0abec9776f" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage Member%3DconnectionManager" tag="ViewCode">
+                <elementDefinition Id="4b3b5a97-8213-4e5b-be56-ca5136214650" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="3dc93011-257c-4f4f-863d-84d60b7448cc" name="field" profile="CSharpProfile">
+                <elementDefinition Id="e2c9a491-c13c-4453-b5fb-870a39c20fb6" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0c4abafe-3c7d-4df2-a58c-11d004445a24">
+                    <propertyInstance Id="5a965f73-f248-4240-8e58-872995d30844" name="ClrAttributes">
+                      <elementDefinition Id="34fa3e47-3220-42d6-b48e-c6f336070007" />
+                    </propertyInstance>
+                    <elementDefinition Id="68c7585c-4518-4fa0-9351-c6df9adc8ca2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7203fa80-3605-4acd-abc5-30066e86d77b">
+                    <propertyInstance Id="c6cc47c4-b4ef-4f9d-b5f3-fe1ed2118299" name="IsConst" value="false">
+                      <elementDefinition Id="99a78390-8243-4ad5-b3c6-73481016923a" />
+                    </propertyInstance>
+                    <elementDefinition Id="efb48365-cc87-4166-a664-5f6d66dd02d0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5782f759-ed80-4607-a286-d7c0a9267301">
+                    <propertyInstance Id="3a45c6aa-3cb1-4b4a-8106-3c928425fb6e" name="IsNullable" value="false">
+                      <elementDefinition Id="3f9098db-20b6-43a4-95df-ab4149733559" />
+                    </propertyInstance>
+                    <elementDefinition Id="92886e6b-a5c7-4ba6-8e08-d871d6ea5eda" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="62a33970-4bcc-4356-a3b3-7200d4420e97">
+                    <propertyInstance Id="1c4e26d8-c651-4ba3-a384-073b41c06e40" name="IsVolatile" value="false">
+                      <elementDefinition Id="3224b8ac-962c-46d9-9fe4-74ccc27bacb8" />
+                    </propertyInstance>
+                    <elementDefinition Id="36f948bc-fc68-40d6-96ee-cca121a514e7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d56fba96-c39e-4d54-8330-d0fcc398503a">
+                    <propertyInstance Id="4b320ba9-7ee6-4a5a-b078-882b06611ec6" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="7d6f70cc-3d07-4a24-ae16-c761d6df3946" />
+                    </propertyInstance>
+                    <elementDefinition Id="7d2828fb-5ec4-49ca-be23-e2f870bc0fdd" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="69a45437-185c-4735-8652-63a8f3e39d2d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f77edd76-c861-4ceb-b548-3ac7905b497e" LastKnownName="BluetoothConnectionManager" />
+            </type_NamedElement>
+          </property>
+          <property Id="2d99064c-4c71-4ea9-ba9e-8b8473ce3506" name="displayButton" visibility="Package" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="ff507401-46fb-4693-90ce-58183ae84adf" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage Member%3DdisplayButton" tag="ViewCode">
+                <elementDefinition Id="467deec5-d7e5-41ee-af06-053c2c17590f" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="327e082e-d434-44be-a366-3086e601b18f" name="field" profile="CSharpProfile">
+                <elementDefinition Id="4307bf25-f15d-406d-9b16-2f8098297356" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="26973d07-d55f-4955-a89a-6dd8a8340fe2">
+                    <propertyInstance Id="d133829c-584b-45f4-8fb4-dd7375754bb4" name="ClrAttributes">
+                      <elementDefinition Id="d309fb88-e59d-4495-9083-7250f173afde" />
+                    </propertyInstance>
+                    <elementDefinition Id="83b90938-0a75-4309-8850-7fa8bcc42878" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="49c2eb72-95b0-4a31-a33a-74c0d3ddf712">
+                    <propertyInstance Id="c1d8de4e-4597-44c2-97b4-1f93c1bb5214" name="IsConst" value="false">
+                      <elementDefinition Id="46d1502f-70d8-480f-b486-426c95f85384" />
+                    </propertyInstance>
+                    <elementDefinition Id="9f456833-58d3-42a2-a2ef-d2e643103a5c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9febcc54-4e89-4c51-aa51-60016a0036fc">
+                    <propertyInstance Id="37b6e039-19c4-4d2e-8326-4e9bc8df9ef5" name="IsNullable" value="false">
+                      <elementDefinition Id="7ffc4044-06f1-4241-beab-d709c6a57245" />
+                    </propertyInstance>
+                    <elementDefinition Id="17a1815c-f137-4b5f-acc5-f8270fa8613a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6553d27b-effb-449d-9bed-2a19e01f215b">
+                    <propertyInstance Id="9dd6f92d-abc3-487b-ab29-16e5876f8a9c" name="IsVolatile" value="false">
+                      <elementDefinition Id="e07f2a90-8f2d-4a04-836e-577618ae7805" />
+                    </propertyInstance>
+                    <elementDefinition Id="170a8b67-7d42-4e31-9d75-9cd3816f13a9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="113170c9-c795-4270-a947-ff15a8430a4b">
+                    <propertyInstance Id="233fd52c-6ec5-43bd-9a55-e676ca35ab4a" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="03b91258-a022-4a8d-a5b5-5432c069d8c0" />
+                    </propertyInstance>
+                    <elementDefinition Id="bba91084-a9a2-4726-b7ef-3996cf8cce2d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="b97ce778-3833-4636-81b8-b371d68621c2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f5d79b1b-67c2-40e4-9936-4569bd353fb8" LastKnownName="Button" />
+            </type_NamedElement>
+          </property>
+          <property Id="e6325ba1-0a25-40a0-9a09-ffb641565954" name="lightButton" visibility="Package" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="aef6a649-26ad-4827-9ed7-a14eabdf6c09" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage Member%3DlightButton" tag="ViewCode">
+                <elementDefinition Id="036e9ae3-98ca-478d-b7ec-a75f1bf89897" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="e7601c0f-6300-4394-98b6-ae0be3f5603c" name="field" profile="CSharpProfile">
+                <elementDefinition Id="10136e21-81a4-4f77-8594-956464071c23" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="01ed5a74-d88d-49ac-9d01-3c7d78900ea5">
+                    <propertyInstance Id="567615df-ed88-4136-b4af-ef3e3d2fccb3" name="ClrAttributes">
+                      <elementDefinition Id="4c8258b1-6085-4719-b088-37c58177b9c8" />
+                    </propertyInstance>
+                    <elementDefinition Id="acff3d3e-4aea-4c5b-9008-03c70d734045" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="73391fe7-66ff-46fa-a87a-d91f9aff7f00">
+                    <propertyInstance Id="5899a732-c07f-414c-aad6-d9d505c855ee" name="IsConst" value="false">
+                      <elementDefinition Id="ebd2a695-42ee-48b3-879a-b2e7570df17a" />
+                    </propertyInstance>
+                    <elementDefinition Id="a24f339e-4832-42ac-8902-092e9c2a12f6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="20562047-1115-41be-9566-75d38bfc2cf6">
+                    <propertyInstance Id="103d7163-0c7d-4bdd-84b1-d41997dddd17" name="IsNullable" value="false">
+                      <elementDefinition Id="1aaecff5-106b-43b8-9b64-359b425eab7e" />
+                    </propertyInstance>
+                    <elementDefinition Id="eeb0789b-0f99-45e6-95d6-313e6f472e13" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="090d8859-65ee-402a-a74e-8b9a85b63b59">
+                    <propertyInstance Id="6dc9b74e-a49e-4d29-855e-fcd53aa66ed9" name="IsVolatile" value="false">
+                      <elementDefinition Id="f07f516f-8260-44ed-b3d2-08a98eeb70b8" />
+                    </propertyInstance>
+                    <elementDefinition Id="f0e7b1e0-1a3f-4695-9e76-08b3338ede62" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="eb22e168-675e-45d5-999c-fbd048684241">
+                    <propertyInstance Id="7098ee96-678b-43f2-b576-e8548eaeeca1" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="edd30df4-c565-42c0-a5f9-dfa588d6cceb" />
+                    </propertyInstance>
+                    <elementDefinition Id="f38ec4f9-3860-4015-a26c-9c88e84c2eb3" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="12088f27-89af-4f61-afc6-c0a3829075b5" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f5d79b1b-67c2-40e4-9936-4569bd353fb8" LastKnownName="Button" />
+            </type_NamedElement>
+          </property>
+          <property Id="86b42ab4-bed3-4d50-a51a-4c556a647172" name="stateManager" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="f8c94bbb-f697-4ac4-8759-73bdef467c41" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage Member%3DstateManager" tag="ViewCode">
+                <elementDefinition Id="2a2ca877-b959-4378-b322-3eb7c05c5533" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="ea021e38-045e-4de1-9943-35b9817cd823" name="field" profile="CSharpProfile">
+                <elementDefinition Id="b29b0623-3819-4b9d-92d4-1e1f344b5f4b" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="345fdb48-4bd2-418a-9df6-7d37b48cb097">
+                    <propertyInstance Id="3300d43a-f6f2-4e35-bad8-6ac87a33846d" name="ClrAttributes">
+                      <elementDefinition Id="68aea710-21ee-486b-99b2-0a0d95816523" />
+                    </propertyInstance>
+                    <elementDefinition Id="15a8a63f-8659-4d14-972f-a580d4acb038" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="337b3319-49b0-4edb-b8c3-73be497e2ffc">
+                    <propertyInstance Id="fc162a8a-9ac0-426d-a1d7-4e04206a5dcf" name="IsConst" value="false">
+                      <elementDefinition Id="59a74373-7e4a-4d6d-a6a6-cb5d0d3d44fa" />
+                    </propertyInstance>
+                    <elementDefinition Id="fd7f3e79-5517-4892-875f-fc59d087e318" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="19a0050f-4a45-4929-9093-d181f93df62b">
+                    <propertyInstance Id="9143c616-b958-49c0-b521-ec04a63e7d3f" name="IsNullable" value="false">
+                      <elementDefinition Id="a31c7474-1cb5-4ed5-a04e-87af69649e28" />
+                    </propertyInstance>
+                    <elementDefinition Id="037b2ebb-450a-4074-b052-e5466076f5f3" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b3bc5495-3add-40b8-bf2e-7268bd0f36e4">
+                    <propertyInstance Id="dd7015ce-c96f-4c58-af1a-f758f590af13" name="IsVolatile" value="false">
+                      <elementDefinition Id="e0425407-6421-4337-b0d1-3d672cae44d7" />
+                    </propertyInstance>
+                    <elementDefinition Id="28c04f68-6872-4406-8194-919431bcc818" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b7458339-df82-42c5-8ac3-6bd79d712c99">
+                    <propertyInstance Id="d6776d16-3b56-4965-b089-ec27cc2a594d" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="af384d9e-3b3d-4054-9b35-9d3af2c3482e" />
+                    </propertyInstance>
+                    <elementDefinition Id="f6eb1b30-1dd2-48f5-b136-df40f5965372" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="19d1f293-5dfa-48a8-aab2-133a9ebcb33c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d3396059-ecdb-49b3-aa1d-50adf330ebf8" LastKnownName="StateManager" />
+            </type_NamedElement>
+          </property>
+          <property Id="6f0aa7f3-943a-4825-bbdc-8fa62d5b5468" name="syncTimeButton" visibility="Package" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="f88423e4-47cd-4e76-a996-bbaed5b45b27" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage Member%3DsyncTimeButton" tag="ViewCode">
+                <elementDefinition Id="7b9239db-f3c6-4f53-9ff5-24c1482df87a" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="1797b144-ff51-4d47-8f08-5646c9a97b29" name="field" profile="CSharpProfile">
+                <elementDefinition Id="8fb07de1-a830-4f72-a2d2-f262cb257506" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="77b46767-c228-4f76-87b8-f2ee78e4093c">
+                    <propertyInstance Id="197033b2-b7cf-4ae8-b218-bd700d2246da" name="ClrAttributes">
+                      <elementDefinition Id="386f8b3d-7707-4374-a460-4bc351ffc5ec" />
+                    </propertyInstance>
+                    <elementDefinition Id="fcc91495-1ae0-457d-bcaf-45588518d7b4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="53836584-a74a-4b3e-9f85-a7513fb50e5f">
+                    <propertyInstance Id="8a4d4cf7-ead3-4db3-8cf1-383dcaac7159" name="IsConst" value="false">
+                      <elementDefinition Id="d73919f7-b568-4ae9-9ebc-c5d9dcd881e5" />
+                    </propertyInstance>
+                    <elementDefinition Id="da3201c5-5c73-4d72-bb12-586d9f176379" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="52793d72-9640-4ac5-a761-af4c43b53572">
+                    <propertyInstance Id="8690fe3d-562c-4c8d-a209-62dd2285e93f" name="IsNullable" value="false">
+                      <elementDefinition Id="3d0a5025-18dd-44ed-b7ea-47a49f1bde91" />
+                    </propertyInstance>
+                    <elementDefinition Id="dd94e9be-6a8b-480c-8626-e8d95640ab2f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fee48e93-f8f7-4906-9469-bcb9a742c863">
+                    <propertyInstance Id="7aa97047-c975-4d9c-b8d9-02a788ed14e3" name="IsVolatile" value="false">
+                      <elementDefinition Id="8bd03162-515b-4311-a883-3a9bd4276fea" />
+                    </propertyInstance>
+                    <elementDefinition Id="c628fd5f-8cbe-4611-8887-d4ac26173220" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d765ee27-faed-4926-9b5c-69e3950a8767">
+                    <propertyInstance Id="4348a97c-cd08-40bd-b608-7af97773b22b" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="08abfe65-ffe5-40fb-af11-0ab9c54c81cf" />
+                    </propertyInstance>
+                    <elementDefinition Id="c4889f65-04f7-4140-8546-ae3554a17c7a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="f485a07c-29c6-4792-b1f6-e569d4004c74" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f5d79b1b-67c2-40e4-9936-4569bd353fb8" LastKnownName="Button" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="29fcad23-9d65-4347-bf51-e09104c503ec" name="connectButton_Click" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="08a926d7-cb4b-48cc-950b-ed973c31ccd2" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage Member%3D(Name%3DconnectButton_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2FSystem.Windows.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)])" tag="ViewCode">
+                <elementDefinition Id="ae3bd313-ca1b-4295-b0eb-82fb53726894" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="a0e0ee6c-560d-49cf-bb59-20632a3d0690" name="method" profile="CSharpProfile">
+                <elementDefinition Id="8c2d2616-c5c1-47ee-a901-35c2d24c5cce" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="16b7b915-3c52-4304-8c87-9464997e636a">
+                    <propertyInstance Id="48cc3cc8-d2da-446b-9734-8705c46f0841" name="ClrAttributes">
+                      <elementDefinition Id="ea55eae5-1a76-4bbb-a6ab-7a350043a958" />
+                    </propertyInstance>
+                    <elementDefinition Id="f069820d-680b-4aa1-8925-5f0ae2b5fbb5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="bf24d43d-3cdc-4a7e-881c-a7de92f1b7ce">
+                    <propertyInstance Id="ea74fba5-82e0-4b4d-a239-bb908976ee2a" name="IsPartial" value="false">
+                      <elementDefinition Id="38c14644-4fed-4292-b126-5c21bf4efcd4" />
+                    </propertyInstance>
+                    <elementDefinition Id="b7917ce6-a627-4b96-8d85-81761254c699" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2040f82f-a70a-43a6-bfaf-bdb94b5886ed">
+                    <propertyInstance Id="6aa40264-0847-4936-a776-7376abe27ec1" name="IsUnsafe" value="false">
+                      <elementDefinition Id="1b6c59f3-43c8-4f0b-828b-927e98a1a2a3" />
+                    </propertyInstance>
+                    <elementDefinition Id="27704524-5ad7-4bce-8e75-9d3639a47827" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="859f66b6-507c-4a66-8712-7677cec4c53c">
+                    <propertyInstance Id="7ecae743-4a82-4a78-b65b-c2e11534f0a2" name="Inheritance" value="none">
+                      <elementDefinition Id="08019877-ac88-48c6-a689-ea3b6dcb2c43" />
+                    </propertyInstance>
+                    <elementDefinition Id="67464334-1f68-45ae-8766-5319cb38c9e5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b84e17f2-1708-4acf-8210-aaa8a1243ab4">
+                    <propertyInstance Id="ac8c8c0a-6f8e-43ce-aea5-0ca0098398fc" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="5e7adaf1-8cc6-419e-85a3-b587bb89fc3c" />
+                    </propertyInstance>
+                    <elementDefinition Id="1b7c06c1-217c-4eeb-a797-a887979f5a30" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="809f5a4d-e6c8-4c23-b3b7-c063788010f4">
+                    <propertyInstance Id="f4cd389a-21a0-4d09-88e6-b356aeccab70" name="params" value="false">
+                      <elementDefinition Id="69f25e70-d195-432c-99c9-cd7fbdf91d68" />
+                    </propertyInstance>
+                    <elementDefinition Id="4b1dee01-b80e-4d9c-8054-4b775a430bad" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="d334b763-2926-4aab-b5eb-0733338179d5" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4437ccd9-2b6e-4cbb-9edb-d05de4947a62" name="sender" direction="In">
+                  <referencesInternal>
+                    <reference Id="b5b3bf5c-e5ad-49ff-87e0-8e971a55cbb5" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage Member%3D(Name%3DconnectButton_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2FSystem.Windows.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3Dsender" tag="ViewCode">
+                      <elementDefinition Id="08f43424-b650-4ff1-8b62-93395b317503" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="c0040d01-7e13-4f01-8d8b-d2c29a34be8b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1944bbb1-74b9-43f9-8926-0cc08512ec26" LastKnownName="Object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1940afce-80b5-40c3-a9dc-3f41398a8b67" name="e" direction="In">
+                  <referencesInternal>
+                    <reference Id="f69ac4c2-6e4b-4534-8822-6c053aa5b4f4" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage Member%3D(Name%3DconnectButton_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2FSystem.Windows.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3De" tag="ViewCode">
+                      <elementDefinition Id="de984642-e6fe-4611-892f-efaaac6e3de1" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="45868772-33b6-4748-a8a1-a29d009e57e8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="27779d5a-d20b-422c-bec0-74e40af947f6" LastKnownName="RoutedEventArgs" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="fdbda5a6-02d1-4fa0-8097-2edef4617789" name="connectionManager_MessageReceived" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="11349cf9-afd5-42cd-ba88-6ff44957607d" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage Member%3D(Name%3DconnectionManager_MessageReceived OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])" tag="ViewCode">
+                <elementDefinition Id="2b437ea6-bed1-406a-97f9-17a87749eb03" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="132f813c-ae2d-4cb1-9cc8-3828a972f91c" name="method" profile="CSharpProfile">
+                <elementDefinition Id="d501110a-1fce-43a0-9e74-51861d948414" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="19a8b69b-9cd5-485d-9b7d-a727763a78d1">
+                    <propertyInstance Id="2bff07a8-6aa8-4b87-9f3d-bf37b98e3fd6" name="ClrAttributes">
+                      <elementDefinition Id="3abaa4fb-c523-4c6c-a4c2-beed9b387642" />
+                    </propertyInstance>
+                    <elementDefinition Id="e6ccee15-eb4b-4838-876e-08eecde31039" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7ad1a6cb-34e7-4be2-a77f-9b6a03b5f476">
+                    <propertyInstance Id="4b46befd-248a-4e37-ba52-ad29250ecf22" name="IsPartial" value="false">
+                      <elementDefinition Id="27617ba1-56ac-444f-b53f-b6c1b7f4c1c8" />
+                    </propertyInstance>
+                    <elementDefinition Id="ae1d4a88-763c-4903-ab07-a47573eff635" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="73eb1b72-6176-49a3-98d7-6f1d293ade9d">
+                    <propertyInstance Id="a362d019-5d6c-466e-8186-e409919e1476" name="IsUnsafe" value="false">
+                      <elementDefinition Id="25f4db7e-b67e-4310-94a9-71d772c331e6" />
+                    </propertyInstance>
+                    <elementDefinition Id="99fe923e-43bb-4243-bc05-ddd231ae7a2a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5915f919-b7ab-41b3-a9d6-eb2b456b65f1">
+                    <propertyInstance Id="41dbbecd-3f20-40a0-8a49-777efaf1b565" name="Inheritance" value="none">
+                      <elementDefinition Id="676d1154-b335-449a-a848-b153702fe090" />
+                    </propertyInstance>
+                    <elementDefinition Id="8b323c5d-939e-4ca3-9606-386047349eab" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cf0f9a3a-3cbc-4d23-83fe-ffa340480c68">
+                    <propertyInstance Id="9ba76189-8701-4601-b45e-7524f84ecedc" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="88d36ba9-a791-4ddf-b1d7-136d8caca44e" />
+                    </propertyInstance>
+                    <elementDefinition Id="ad2f1a2f-be28-4e84-9952-e458c8c14abc" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="34bf5bd8-96ac-4f1e-940c-270d54802d22">
+                    <propertyInstance Id="f0179370-eb03-4862-8c8a-119376eeb47f" name="params" value="false">
+                      <elementDefinition Id="f9fdb77e-9de4-4160-a035-64ba751e6f4c" />
+                    </propertyInstance>
+                    <elementDefinition Id="ceaa887a-50f9-4e41-9231-6594ca28d5a4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="837a9ddc-6612-474c-b29a-73dafb912f22" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1d0abaef-eaee-4840-ab28-77aa1884bed5" name="message" direction="In">
+                  <referencesInternal>
+                    <reference Id="2a67ec54-a015-42eb-9af5-233ad7a4a447" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage Member%3D(Name%3DconnectionManager_MessageReceived OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dmessage" tag="ViewCode">
+                      <elementDefinition Id="a6088f38-a775-4e48-9acb-0177ead40284" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="3360db97-494d-4eb7-8e62-1530b415a30f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="fa57cbb6-2512-4a4e-b233-16f368c79780" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="bfc18a9a-d384-490d-9d2f-178e873f8634" name="displayButton_Click" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="015a4c36-26fe-416e-92ac-665819aa0a7c" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage Member%3D(Name%3DdisplayButton_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2FSystem.Windows.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)])" tag="ViewCode">
+                <elementDefinition Id="8d345632-4551-4265-84c9-6d0ef39fd2cd" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="a3d6f91a-dc48-46d5-844c-0b9589ca4876" name="method" profile="CSharpProfile">
+                <elementDefinition Id="176c6c61-fd13-4cfe-b135-8560838f6b07" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ad3a8260-ebfe-481e-b769-e90f3df91e6c">
+                    <propertyInstance Id="8af6d4c1-f231-4fb0-b16f-66af9ae0aae3" name="ClrAttributes">
+                      <elementDefinition Id="2f2eaa5d-ee18-419a-bd87-63aea614df19" />
+                    </propertyInstance>
+                    <elementDefinition Id="c0f93d18-4300-4c10-9459-a9cda2af5094" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2e21750e-11f7-4170-9d4d-79a742b699dd">
+                    <propertyInstance Id="776577d0-0bd8-4ead-a858-5477fc5e4943" name="IsPartial" value="false">
+                      <elementDefinition Id="6df4fd18-7a8d-4811-ac66-be1fb93b0d21" />
+                    </propertyInstance>
+                    <elementDefinition Id="5718e064-220d-4fd1-9a0a-c2e4837943cb" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="bca7a9ec-83ea-403e-a357-a4674d9f563d">
+                    <propertyInstance Id="5651f5eb-bc61-4b0a-ad22-129ffd583324" name="IsUnsafe" value="false">
+                      <elementDefinition Id="bf2335d2-7c6a-40c0-ae23-b42fa7fdc3ed" />
+                    </propertyInstance>
+                    <elementDefinition Id="af97904a-66d7-4dbc-9fa3-ae58ae669545" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="06f109ef-891b-4613-b077-7a2262dc18dc">
+                    <propertyInstance Id="a269adbf-1ecd-4c76-b4ef-0d06314a4de7" name="Inheritance" value="none">
+                      <elementDefinition Id="0701a75f-952e-4450-af40-711b4b92d49e" />
+                    </propertyInstance>
+                    <elementDefinition Id="041f3122-eb8c-49ad-a2f7-a28882516897" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="32e1777f-b503-4126-a7e7-b77740d4dc93">
+                    <propertyInstance Id="b8260cd1-0a62-46d5-a75a-4677dd18ebdb" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="4fb5a8c6-7786-4f2b-abb4-83a3ceef3a4d" />
+                    </propertyInstance>
+                    <elementDefinition Id="d135e498-913e-4843-9ab4-72e540b4c05d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="884ceb2b-9c4a-4ee9-950c-47935e70574f">
+                    <propertyInstance Id="4a3da441-6d70-48c0-b5c9-50ca0b5d03e0" name="params" value="false">
+                      <elementDefinition Id="f4cc65e0-74b5-43e1-bb13-5fc6103a9b65" />
+                    </propertyInstance>
+                    <elementDefinition Id="c1209119-edb0-4180-b8d7-0207121098ca" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="32d83f14-2a35-4929-9d49-0d2bcd502cb1" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1dd63117-4704-4d3e-b950-4668e235f7f6" name="sender" direction="In">
+                  <referencesInternal>
+                    <reference Id="0fa6a73b-20b1-4599-b6c7-ca12b84a3a35" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage Member%3D(Name%3DdisplayButton_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2FSystem.Windows.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3Dsender" tag="ViewCode">
+                      <elementDefinition Id="d4ee270d-2073-4a39-9100-4807e27b36b2" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="b9783f1b-3325-4212-be11-5d0b20a6f9c8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1944bbb1-74b9-43f9-8926-0cc08512ec26" LastKnownName="Object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="acd2b5f1-420c-4e2c-a4ef-d6435ae0a72f" name="e" direction="In">
+                  <referencesInternal>
+                    <reference Id="435a1f8b-920b-419e-86cc-873a4e57b903" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage Member%3D(Name%3DdisplayButton_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2FSystem.Windows.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3De" tag="ViewCode">
+                      <elementDefinition Id="fee83788-4972-46b2-98ad-8854555889e3" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="d2cf67fb-3dc2-430e-89f0-02b404a031dd" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="27779d5a-d20b-422c-bec0-74e40af947f6" LastKnownName="RoutedEventArgs" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="bdbacdfa-6c1b-4c16-89a5-8871b3b41a8d" name="lightButton_Click" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="9a608042-ae18-4033-a4a3-2a2ed2d8483d" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage Member%3D(Name%3DlightButton_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2FSystem.Windows.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)])" tag="ViewCode">
+                <elementDefinition Id="0474faa8-a0b1-413c-a41b-06b02ab1c7f9" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="64a8d951-9cea-4f60-baaa-1ff4f28baf88" name="method" profile="CSharpProfile">
+                <elementDefinition Id="3f184f34-45d9-411b-9f4a-386a73fc7b61" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d069051b-88ab-4eb8-af1c-669e6b4209c8">
+                    <propertyInstance Id="fc0bc510-31e5-400e-b299-80da77df6d2b" name="ClrAttributes">
+                      <elementDefinition Id="c7d7754c-9bdb-49df-8462-4e73ae6e9d2d" />
+                    </propertyInstance>
+                    <elementDefinition Id="0770c78a-f6be-48c6-a9da-9bb8dddaaa49" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="03b8e4b5-0326-46c2-8e24-67d9a073ce16">
+                    <propertyInstance Id="0d408bb7-e49b-4c39-8ffb-773ee62eb2f5" name="IsPartial" value="false">
+                      <elementDefinition Id="dc0307f7-7a3d-477c-804c-8e11537c5204" />
+                    </propertyInstance>
+                    <elementDefinition Id="8dbab5c4-b7ab-408c-9e21-47a992dd91c6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f4075f1b-0f58-4e8b-8635-762667c5fdd9">
+                    <propertyInstance Id="e6a06da7-482a-4819-807e-f2d3cf10c7bc" name="IsUnsafe" value="false">
+                      <elementDefinition Id="b4eb23ee-f748-4c6b-a327-448fcf418fd1" />
+                    </propertyInstance>
+                    <elementDefinition Id="f12eb177-763e-4d9d-a21b-1e1931b2add6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5e8b1d15-7b3a-474b-87d3-cfd26bc97aee">
+                    <propertyInstance Id="897c05f0-493d-4931-ac22-ef0dc53b8922" name="Inheritance" value="none">
+                      <elementDefinition Id="c5989bfb-6c35-470b-a5fe-1fcc713ac71a" />
+                    </propertyInstance>
+                    <elementDefinition Id="4f8bee53-5857-4146-8090-7e5dac4541eb" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="917d726f-6181-47c9-9883-120828c9756b">
+                    <propertyInstance Id="62198de1-5d6c-4e49-bb26-1fbce8334f98" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="32e13ab0-0f79-4751-b0a8-8400d17e23f1" />
+                    </propertyInstance>
+                    <elementDefinition Id="f9dfd5b1-98c0-48ea-94a9-53a5374bf324" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6451c26f-db42-4470-9f3c-11dec67f5b70">
+                    <propertyInstance Id="ec5095cd-14dd-4b39-9297-caf417293da1" name="params" value="false">
+                      <elementDefinition Id="c11c6620-d327-488a-aa92-ba0e14e319ec" />
+                    </propertyInstance>
+                    <elementDefinition Id="ab376086-3cce-427d-b47d-b72c01e69edc" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="b6cee5f2-ad8e-417d-bbe7-bdffcdaa1271" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="68e6c68f-8dca-460a-9142-ee772e593582" name="sender" direction="In">
+                  <referencesInternal>
+                    <reference Id="73c96c58-96cd-4761-8f5b-8cbc070f2316" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage Member%3D(Name%3DlightButton_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2FSystem.Windows.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3Dsender" tag="ViewCode">
+                      <elementDefinition Id="8fd37874-fb79-48da-b170-2f755308b112" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="304b240e-6688-466c-be28-2c419eac9058" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1944bbb1-74b9-43f9-8926-0cc08512ec26" LastKnownName="Object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c0c31b44-7e43-43b5-b382-129bef8820b9" name="e" direction="In">
+                  <referencesInternal>
+                    <reference Id="333ea5ae-8f6d-44bf-92c3-fc046f32e733" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage Member%3D(Name%3DlightButton_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2FSystem.Windows.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3De" tag="ViewCode">
+                      <elementDefinition Id="407f6066-f53e-401f-900e-c463d84e2f58" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="25c01f03-548b-460a-9c5e-f781b83d007a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="27779d5a-d20b-422c-bec0-74e40af947f6" LastKnownName="RoutedEventArgs" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="3dd4ee89-fb76-49b9-9d57-f217ef4300e2" name="InitializeComponent" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="0ac937f5-522b-40e7-bd43-371fadfd3a98" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage Member%3DInitializeComponent" tag="ViewCode">
+                <elementDefinition Id="4bb5a3a5-5029-4976-90d4-2cca0ebab0e7" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="2a52055a-3474-4166-be4b-abf6464929c0" name="method" profile="CSharpProfile">
+                <elementDefinition Id="1e045bcf-2271-4e4c-9f58-1d01d2787467" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="73a93ff6-c080-41b0-8ca7-22f436b79c51">
+                    <propertyInstance Id="93f44360-797d-403c-aaa9-c6591bfdd305" name="ClrAttributes">
+                      <elementDefinition Id="26f37d50-4519-4fbb-9b45-be7712994ed0" />
+                    </propertyInstance>
+                    <elementDefinition Id="cf89998e-1c90-4ac7-a03f-f21cb82daca9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="040c5ae0-a455-4776-80de-b637de4213e9">
+                    <propertyInstance Id="c55625b8-808d-49b2-9634-3d5a41754356" name="IsPartial" value="false">
+                      <elementDefinition Id="3d1842f7-5c1e-4777-bd23-6440b71b9bd4" />
+                    </propertyInstance>
+                    <elementDefinition Id="2c3ea369-0680-4708-8fea-287c99c04f17" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6fb4e4d7-ec98-4e5c-b26d-68f8ee5f86e8">
+                    <propertyInstance Id="4fb07ff0-58bf-4d8c-89e4-3f220f934372" name="IsUnsafe" value="false">
+                      <elementDefinition Id="89edc84d-9e46-4b2b-8fef-c75a4849a5a0" />
+                    </propertyInstance>
+                    <elementDefinition Id="1bb000fe-addf-4def-80e8-760d12fe6ecd" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="912c17e4-3df0-4efa-b127-b5fcf5482941">
+                    <propertyInstance Id="341e6d37-a838-4349-b695-82350241e10f" name="Inheritance" value="none">
+                      <elementDefinition Id="3c078d53-a5f3-4462-9f2c-b17a368bfd33" />
+                    </propertyInstance>
+                    <elementDefinition Id="8b2668af-4fa3-41ca-840d-47eeef5276c9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="04292278-f6ef-4125-8b59-eb4cb07a5b42">
+                    <propertyInstance Id="fe0c2f2a-9c98-4499-b72d-44da81de4b61" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="31fdc9f9-b416-4f98-854b-348bb921250c" />
+                    </propertyInstance>
+                    <elementDefinition Id="ce8a16df-2fcd-4824-aff5-223000db8498" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b3ec3c55-f419-469e-8ce8-910bc8f6b1dc">
+                    <propertyInstance Id="a44d5d79-12a3-4ad2-a3ed-84b346707044" name="params" value="false">
+                      <elementDefinition Id="4cc80bcf-ffae-4a28-99be-005f7844ec75" />
+                    </propertyInstance>
+                    <elementDefinition Id="6eb17f90-4c93-466a-b991-1b7c98c34200" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="32088ef9-d096-43a0-b3d4-e52bff874fb7" />
+          </operation>
+          <operation Id="4799e8ef-7151-47bd-863d-fced45c93acd" name="HardwareSettingsPage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="5caacdad-6dad-4bcb-a8c7-e104baf778ae" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage Member%3D.ctor" tag="ViewCode">
+                <elementDefinition Id="b05c81fe-83e8-4e59-bb51-3ab641ae77ac" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="84ec0f9b-c980-49dc-80bc-79f1c65dae42" name="method" profile="CSharpProfile">
+                <elementDefinition Id="dac1f63a-c417-439c-a5f4-b058a31f0a03" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e42837aa-b3ac-4dac-acfe-d796f8b4f91a">
+                    <propertyInstance Id="c485e2d4-ba18-4274-8dfe-cdb64dcd8e3e" name="ClrAttributes">
+                      <elementDefinition Id="a266adc3-0695-44a2-81a1-ef518d488ec4" />
+                    </propertyInstance>
+                    <elementDefinition Id="1009d635-e211-47aa-a7c7-9325b4ec4e5f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="19dbd268-2342-4102-98e7-0da02eeeeb70">
+                    <propertyInstance Id="d571594c-3699-4c0d-a5e2-cffaf9022bc2" name="IsPartial" value="false">
+                      <elementDefinition Id="6208d2a3-721d-4bbd-aaee-558192aa8a2a" />
+                    </propertyInstance>
+                    <elementDefinition Id="55a05ea4-47ca-4038-936e-16a5c9613029" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="492a46ab-fa4b-40a6-8b87-9296cd080a82">
+                    <propertyInstance Id="e2239974-8322-4148-bb27-c27151724592" name="IsUnsafe" value="false">
+                      <elementDefinition Id="0594ac32-486b-43e0-9c99-b094f91d334e" />
+                    </propertyInstance>
+                    <elementDefinition Id="c2410c72-01cb-4570-99ef-4b06e73296aa" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="dff7ab81-faff-4eaa-aaea-dea67a2d9ffc">
+                    <propertyInstance Id="92b914b5-a430-493a-82e0-a0bcba263e42" name="Inheritance" value="none">
+                      <elementDefinition Id="29e23280-8ef9-4a0f-b3e5-8bfb2c7c7744" />
+                    </propertyInstance>
+                    <elementDefinition Id="cd71e501-d1a6-4424-ace2-9c48b7159313" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="dae321f2-61b6-41cc-8e3b-811bc7463404">
+                    <propertyInstance Id="24de5f1c-73b2-48fb-a0a2-66d3abc58424" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="51786bea-bc87-484f-97a2-799cee3bf4ac" />
+                    </propertyInstance>
+                    <elementDefinition Id="3e3ccff4-1545-4f72-8d36-ea336ca3b831" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="21ce63d4-6973-4999-acb7-d3e25568e41b">
+                    <propertyInstance Id="3c326bc5-63f2-40d7-981a-0b84d073027c" name="params" value="false">
+                      <elementDefinition Id="3806d301-5476-4d64-83b8-90bfe8596082" />
+                    </propertyInstance>
+                    <elementDefinition Id="12a9beca-1c6b-4ad5-9ef6-67fd2f813477" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="b2b3067f-8984-4d9e-a43e-f9baa418dcf7" />
+          </operation>
+          <operation Id="cbbb3f75-2a82-43f2-817c-c066923e9e7a" name="syncTimeButton_Click" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="60aa48c0-b271-421e-87d7-c320d189d2a4" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage Member%3D(Name%3DsyncTimeButton_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2FSystem.Windows.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)])" tag="ViewCode">
+                <elementDefinition Id="ff0f292b-7bc2-45d8-aaf4-10853a7d2656" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="b89eb42e-5129-4024-9210-ea0fb2204f43" name="method" profile="CSharpProfile">
+                <elementDefinition Id="0c816272-27a9-497d-a0cf-0dfd42fdf71c" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6ba9dead-e02b-44aa-9e5c-e8d56bfca445">
+                    <propertyInstance Id="4ae5415e-e76a-42c6-a08d-d5bb345ace63" name="ClrAttributes">
+                      <elementDefinition Id="2dc4991b-695a-47f0-8255-8dc0aec31a39" />
+                    </propertyInstance>
+                    <elementDefinition Id="1b63bf64-0671-4302-94d5-bb7058136b80" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c7bfd7b0-ea47-4eb9-9541-6311b2658833">
+                    <propertyInstance Id="7ce4c87c-339e-48a3-9284-73fa3734642d" name="IsPartial" value="false">
+                      <elementDefinition Id="65021917-6e12-44a3-895c-b53ddbcc2a5b" />
+                    </propertyInstance>
+                    <elementDefinition Id="539dd77d-b6f2-43c5-87e3-b90a39e5c5e6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a4d8b6e2-d98b-40e8-8b8a-825522a915cc">
+                    <propertyInstance Id="1eb0e20f-257c-44e7-8760-be85b50333d3" name="IsUnsafe" value="false">
+                      <elementDefinition Id="fb61f6ce-6ed2-4a17-903f-021e45f8a604" />
+                    </propertyInstance>
+                    <elementDefinition Id="888e611c-679f-40f3-8c93-0c10bcb4700e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="bd1f4477-597c-43a7-9ea0-2c7af78599b8">
+                    <propertyInstance Id="0e512a9b-d58a-40e0-86f3-97f2f5caf229" name="Inheritance" value="none">
+                      <elementDefinition Id="cfb891a8-80ab-4443-a82e-d36e7b4dd400" />
+                    </propertyInstance>
+                    <elementDefinition Id="e8961789-e42a-4fda-9b99-9a9871394203" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fca883aa-db12-4030-9138-5c401e22da6f">
+                    <propertyInstance Id="26d994b3-b0e3-4df6-81fd-c33e6339dced" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="7caaf1a1-f075-4f16-87a3-94b605ca268e" />
+                    </propertyInstance>
+                    <elementDefinition Id="22b2ac96-c43a-475c-9eda-03c2c6626308" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2a023ee3-7777-4136-8fc5-5791cf02daaa">
+                    <propertyInstance Id="3316e6e4-9e0a-45d5-91d2-44550e558f68" name="params" value="false">
+                      <elementDefinition Id="af825133-bcc2-421e-91b8-41302f795816" />
+                    </propertyInstance>
+                    <elementDefinition Id="e3cdb55d-52c6-41a1-89ee-6366e632bab4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="2fa8e75b-617e-438b-b8ae-80b1e4214733" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5fa71eb0-f3e4-4925-aa3e-aca008301106" name="sender" direction="In">
+                  <referencesInternal>
+                    <reference Id="9fa5e140-87da-45e4-acd6-dd3cc36b8b70" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage Member%3D(Name%3DsyncTimeButton_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2FSystem.Windows.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3Dsender" tag="ViewCode">
+                      <elementDefinition Id="85e5a4b9-afa2-4880-9c54-04f8214429b8" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="338074a2-e067-4166-831b-ebac7c9373b8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1944bbb1-74b9-43f9-8926-0cc08512ec26" LastKnownName="Object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="94fe65da-5c34-419d-8da5-e7ad73588224" name="e" direction="In">
+                  <referencesInternal>
+                    <reference Id="0fd72e76-4e51-4987-88b5-d839a44ec936" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker Type%3DHardwareSettingsPage Member%3D(Name%3DsyncTimeButton_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2FSystem.Windows.dll&quot; Namespace%3DSystem.Windows Type%3DRoutedEventArgs)]) ParameterIdentifier%3De" tag="ViewCode">
+                      <elementDefinition Id="c5be46c9-7b47-4fc8-993c-b7d28d130f1b" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="69163d3a-5b9a-4789-adc1-41609e7d164a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="27779d5a-d20b-422c-bec0-74e40af947f6" LastKnownName="RoutedEventArgs" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="942a614c-a099-443e-bcf4-23b0794a3e1c" name="Grid" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::System::Windows::Controls::Grid">
+        <elementDefinition Id="54f4c8cd-d9e1-44b1-a970-8a84092be9cf" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f5d79b1b-67c2-40e4-9936-4569bd353fb8" name="Button" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::System::Windows::Controls::Button">
+        <elementDefinition Id="6e94fd03-f36e-4646-b4f5-6c0b10895565" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f77edd76-c861-4ceb-b548-3ac7905b497e" name="BluetoothConnectionManager" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::GPSTracker::Helpers::BluetoothConnectionManager">
+        <elementDefinition Id="69a2ad71-5fa1-4d76-be37-e1ba9210d7f8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d3396059-ecdb-49b3-aa1d-50adf330ebf8" name="StateManager" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::GPSTracker::Helpers::StateManager">
+        <elementDefinition Id="a28d403e-616c-43d6-be56-478610de70ef" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1944bbb1-74b9-43f9-8926-0cc08512ec26" name="Object" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::System::Object">
+        <elementDefinition Id="b868d056-da35-4545-b0ae-9542530957fa" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="27779d5a-d20b-422c-bec0-74e40af947f6" name="RoutedEventArgs" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::System::Windows::RoutedEventArgs">
+        <elementDefinition Id="e3928d6e-ed3c-470c-828c-6f39c8d9d736" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0b52d8fe-aad9-456d-a58a-92374b8c5d92" name="BluetoothConnectionManager" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="73189680-4ff9-488e-a480-a9a016ca4a8a" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Helpers Type%3DBluetoothConnectionManager" tag="ViewCode">
+            <elementDefinition Id="2bef9a6d-85eb-473d-baa2-96649f04b868" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="14fa69a9-0721-4a60-90ef-3f6fa4e8d334" name="class" profile="CSharpProfile">
+            <elementDefinition Id="14e63889-1961-4bbe-86d9-25aff36b75b7" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="fc7474a9-cbee-4972-a2ff-00d7144fbe34">
+                <propertyInstance Id="e5418a24-27f7-4928-b28a-41f4bc946165" name="ClrAttributes">
+                  <elementDefinition Id="86a4d790-cf2a-4a5d-b3f0-77fb4243018f" />
+                </propertyInstance>
+                <elementDefinition Id="9e3307e7-49cf-4898-b852-a0c55628ea5c" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="f3abd5be-7d00-4e78-abd0-f797c41461f7">
+                <propertyInstance Id="902d83f3-2668-4a82-8a22-2c1900add016" name="IsPartial" value="false">
+                  <elementDefinition Id="ab9c5c8b-8f00-47fd-8f4f-d908095cf14c" />
+                </propertyInstance>
+                <elementDefinition Id="1a0f3dae-410a-4f2e-b6d7-755184f2878b" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="7cf420a2-8254-44ff-ab52-47c7f1196110">
+                <propertyInstance Id="65742673-13e9-4eea-b622-48f413718e86" name="IsStatic" value="False">
+                  <elementDefinition Id="d753a8e9-3937-4afa-90e0-87b4ab6b7710" />
+                </propertyInstance>
+                <elementDefinition Id="257a0c81-77d4-4c0b-9cfa-e63619e3742c" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="cab39b71-1d7c-4fbb-a6b3-858a0fdc3e3a">
+                <propertyInstance Id="c84dd56f-b752-4294-b7dc-556b1f10efec" name="IsUnsafe" value="false">
+                  <elementDefinition Id="a0fbf70d-6eee-4ce6-aabe-d569eb66bb47" />
+                </propertyInstance>
+                <elementDefinition Id="60cdae56-09e2-44c2-b92a-4b7f6867f4d2" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="acf1aa9c-528d-41bf-b3ea-736414680363">
+                <propertyInstance Id="b46f5ff7-4976-46c3-89b3-79a24230707e" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="0cf68faa-cfb8-4b85-a3db-7df7d5cf62e2" />
+                </propertyInstance>
+                <elementDefinition Id="bb7e2da2-6718-4f34-91b7-48d395b481e2" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="69a2ad71-5fa1-4d76-be37-e1ba9210d7f8" />
+        <ownedAttributesInternal>
+          <property Id="d982fba4-9efe-406d-87a5-9a2d9461aa49" name="MessageReceived" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="e91a331b-bf14-46de-aa77-dac9dc733678" handle="viewcode://./CodeSchema_Event?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Helpers Type%3DBluetoothConnectionManager Member%3DMessageReceived" tag="ViewCode">
+                <elementDefinition Id="3c28b159-e2c0-4623-b7ea-5a0e00681685" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="29c0c24b-8aa4-44ca-a34a-f6fa06f7ae52" name="event" profile="CSharpProfile">
+                <elementDefinition Id="a24368a7-4f78-4704-8014-e37f0040cbfa" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fa44cbb8-b86a-4877-94f5-d2023c0e7ca4">
+                    <propertyInstance Id="1d5f0900-f07d-4264-9ab9-a6738b6d0409" name="Add" value="false">
+                      <elementDefinition Id="5452f6b5-6102-42e6-abc8-1453c65376cc" />
+                    </propertyInstance>
+                    <elementDefinition Id="6c0f0089-8479-4cf6-af85-e96097e783b9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="dae65315-fe3a-4e48-ad5a-e710504919c8">
+                    <propertyInstance Id="9628af74-b9ca-4fa9-beba-6ea3d718ebe4" name="ClrAttributes">
+                      <elementDefinition Id="3b905ae3-98b8-4a54-b6b2-1066472b9344" />
+                    </propertyInstance>
+                    <elementDefinition Id="244a798a-e6dc-464c-8579-47dac1e01096" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="76eb9a12-7687-432f-9267-f0d52f56206e">
+                    <propertyInstance Id="a2959b4f-4b95-4dae-a93f-bed3ac324933" name="IsUnsafe" value="false">
+                      <elementDefinition Id="0e404f8f-a625-4100-a06a-c5b67a7401a2" />
+                    </propertyInstance>
+                    <elementDefinition Id="7d5293a4-081c-4a79-9142-5d1f6f487124" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="58c98e6f-0c62-4e8a-8e86-3686d81fecfe">
+                    <propertyInstance Id="c7bd8bd2-03b0-48fe-a573-f78131beccf7" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="6545eb30-5c9c-412f-8902-2faca5f69cfc" />
+                    </propertyInstance>
+                    <elementDefinition Id="266ec21f-ef0a-430e-9e03-9aef65cd3874" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d99a9598-c7de-4554-9e84-7422c4af8a07">
+                    <propertyInstance Id="b17f52dd-bce4-4a87-abe5-1b008458fa93" name="Remove" value="false">
+                      <elementDefinition Id="f6d37faa-b457-481b-b824-26e78d53fdb9" />
+                    </propertyInstance>
+                    <elementDefinition Id="8abf8478-b425-4fe2-bb7a-d1aede2f3776" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="89d62129-1679-4b90-9b53-bdae69a0c234" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8726ea1d-90aa-4810-809d-50f4d7eb79b7" LastKnownName="MessageReceivedHandler" />
+            </type_NamedElement>
+          </property>
+          <property Id="d5ca43a9-ef9c-43dd-842c-b9adfa3d7e15" name="dataReadWorker" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="3da06cba-57bb-4660-94bd-2a54a14ed53a" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Helpers Type%3DBluetoothConnectionManager Member%3DdataReadWorker" tag="ViewCode">
+                <elementDefinition Id="2b9093be-f7f2-4686-a822-b660fc53f5c6" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="21da9acb-a9ee-47dd-9962-381f16434c5d" name="field" profile="CSharpProfile">
+                <elementDefinition Id="51d3eb0a-d64b-485b-9094-5973c346674a" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d3e2d0f6-50ac-40da-96fb-cdc33dd6d72a">
+                    <propertyInstance Id="1660221c-0576-4c02-af86-2e8bea83e516" name="ClrAttributes">
+                      <elementDefinition Id="4af6dd60-5145-45ae-adc9-5bf163cd9b6d" />
+                    </propertyInstance>
+                    <elementDefinition Id="7be1a11c-7ff6-47de-82b6-d3c53a2281c0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="746b13e6-aadf-4894-b444-ef643c8576d4">
+                    <propertyInstance Id="e65c7c86-b380-45e2-a71a-5d1b9ddad8db" name="IsConst" value="false">
+                      <elementDefinition Id="fc80ec60-0b3a-44d5-8cbf-372244250a47" />
+                    </propertyInstance>
+                    <elementDefinition Id="b3ba3728-d5cf-4481-b084-2713fa70bcd8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ac51c4ac-1d73-45ac-a946-2853ccacb792">
+                    <propertyInstance Id="9faf99c4-6f98-4791-8a28-d6a4006eb3cf" name="IsNullable" value="false">
+                      <elementDefinition Id="d1ef8c50-f251-4d7b-958c-96fd0e810e39" />
+                    </propertyInstance>
+                    <elementDefinition Id="8c1f194a-1cdd-4599-b2cf-ef7817219e1b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="01d2e91b-b133-4c3a-b7bb-111de18726ff">
+                    <propertyInstance Id="53c64742-e0fd-46e2-96eb-bc57327ca51e" name="IsVolatile" value="false">
+                      <elementDefinition Id="2e88c5ac-cc66-4af7-aa52-a1d835eedde9" />
+                    </propertyInstance>
+                    <elementDefinition Id="b9181f25-ea7c-4d0f-b227-0ff9bbd88d9d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e78ff9b5-8220-4748-9aa6-ad96bbc7f2cb">
+                    <propertyInstance Id="2ddfcb90-ab49-4651-98d8-7907cb5c7803" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="ec171750-1c75-47c9-b10e-c9d514a38a29" />
+                    </propertyInstance>
+                    <elementDefinition Id="1ef292de-742f-4a71-81af-8cc5385a527f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="002e6b09-0b78-4c7b-8efd-3a96807eaffd" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c5567b62-17bc-465e-a884-f08ae18b5dd4" LastKnownName="BackgroundWorker" />
+            </type_NamedElement>
+          </property>
+          <property Id="fa495981-539c-49a8-85f9-3e4e62d57205" name="dataReader" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="1df4fc44-c55d-4a34-94fe-7bab9f21e0de" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Helpers Type%3DBluetoothConnectionManager Member%3DdataReader" tag="ViewCode">
+                <elementDefinition Id="a585ca49-415c-4a87-89ae-8a3ba8ff3a54" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="dcf55fc2-e2bb-48ac-a5c8-cd49c4d9e849" name="field" profile="CSharpProfile">
+                <elementDefinition Id="2b3c24b4-086e-48d4-931c-5c0ff527c3dd" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="90fda824-2ea3-4dbe-9347-2236558523fe">
+                    <propertyInstance Id="5e6a88be-9ad6-42be-b261-c121769c4c71" name="ClrAttributes">
+                      <elementDefinition Id="584e7636-83ea-48ff-a4f8-45b785fea053" />
+                    </propertyInstance>
+                    <elementDefinition Id="0726b9dc-2402-4319-8d6a-7bab286bfe02" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ea94760b-eca8-471c-9aa3-b1acb4043fd2">
+                    <propertyInstance Id="608fc412-8f16-4204-bb8d-6caf1370b06a" name="IsConst" value="false">
+                      <elementDefinition Id="8f0fd285-c5b2-45f0-9241-c77ee03429a3" />
+                    </propertyInstance>
+                    <elementDefinition Id="9bb925df-c710-4209-9af5-a0deb750c817" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a3d06416-98f4-4a98-9322-46056eb48cf9">
+                    <propertyInstance Id="b9185b54-304f-477a-95dc-009e45b5a6c6" name="IsNullable" value="false">
+                      <elementDefinition Id="7a513a50-c334-41a3-b50b-e7eb95b9c13d" />
+                    </propertyInstance>
+                    <elementDefinition Id="38d6a587-7b2d-4d24-983d-8aae83bd835c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7b0e89e1-5f76-4399-8bc6-11f9e2c8397e">
+                    <propertyInstance Id="8ed59638-d0ac-4f10-8382-dba349396c5e" name="IsVolatile" value="false">
+                      <elementDefinition Id="c74b94df-cc0c-4e72-a7a0-965df9f25772" />
+                    </propertyInstance>
+                    <elementDefinition Id="af001031-b1bc-41dd-be9b-746fed8441f6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e486de4b-4693-4aab-b884-6aebee7a6f78">
+                    <propertyInstance Id="ac546d0d-60c0-444d-86ad-ef42415e94b3" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="dd54b35a-7bd2-4b6b-a072-8223aab751a5" />
+                    </propertyInstance>
+                    <elementDefinition Id="7903e401-6cb1-4412-a439-4212285b2f2d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="b214d3d8-0dac-4928-b688-b879006e1c95" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="45742c3a-c16b-46f1-918d-c27125740396" LastKnownName="DataReader" />
+            </type_NamedElement>
+          </property>
+          <property Id="a47a0b5a-e488-45f5-b2c8-1f8296c86fa7" name="dataWriter" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="5ffc5b80-770d-49ae-8a69-fa9c3cc672a5" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Helpers Type%3DBluetoothConnectionManager Member%3DdataWriter" tag="ViewCode">
+                <elementDefinition Id="ba869018-e0da-4674-b3d0-bd7d0d80f6bc" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="35739273-64de-4d12-be7b-c959405e0baa" name="field" profile="CSharpProfile">
+                <elementDefinition Id="00b57e8c-9024-4e5e-8680-de96adba5191" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="298992a4-0bfa-41db-b45a-1561871cbc54">
+                    <propertyInstance Id="86a3400d-28f4-4eee-b97f-1f59b9372527" name="ClrAttributes">
+                      <elementDefinition Id="057a6225-b1f5-4221-b4d3-f8c594f39018" />
+                    </propertyInstance>
+                    <elementDefinition Id="c4604cca-bb78-4cea-b330-be341cedb911" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7836eefb-072a-41c5-b3d5-885dadfef2f6">
+                    <propertyInstance Id="af15bb11-a4b8-43d5-b040-342e60ab46fd" name="IsConst" value="false">
+                      <elementDefinition Id="7422cad0-2b66-49c3-9caa-07f555949094" />
+                    </propertyInstance>
+                    <elementDefinition Id="dfc02850-3995-4053-be1e-3fbaad827c77" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c727fb4e-821a-4282-8620-7206e2fd1b91">
+                    <propertyInstance Id="9dde4263-8622-41aa-b8bd-9abba978e0f6" name="IsNullable" value="false">
+                      <elementDefinition Id="85adfba7-1eb4-46ef-a0c2-d109f30965b8" />
+                    </propertyInstance>
+                    <elementDefinition Id="d928107f-5d6d-4f08-9443-5f7d0b285c68" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="89e24574-322d-4971-bb22-59bd5ff29f46">
+                    <propertyInstance Id="4593f836-0b66-4917-9efe-ea29a3bf0bb8" name="IsVolatile" value="false">
+                      <elementDefinition Id="0ad313f0-8562-4cc8-9856-a83fb7a1e80e" />
+                    </propertyInstance>
+                    <elementDefinition Id="58318fa3-13c0-4b79-a1e5-16276bae6533" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f0b88f3b-a13a-41e6-bc97-b1ac448dedb7">
+                    <propertyInstance Id="6d65b863-c7a6-4e91-9a93-5df48f650861" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="987780e8-6a49-4803-b44b-b03bfc16d7de" />
+                    </propertyInstance>
+                    <elementDefinition Id="df3b4063-9d90-4ae8-91ae-ddc1eb38720f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="198e565f-0ff6-4005-bf77-29a24c911f4a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="9b4fc711-514f-4e51-8826-5c1b77c4ff8c" LastKnownName="DataWriter" />
+            </type_NamedElement>
+          </property>
+          <property Id="09bd2956-2de6-49ae-9cb1-f41ac93b9488" name="socket" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="f03aadf9-ae92-4323-bac9-e5bbf7b28fb7" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Helpers Type%3DBluetoothConnectionManager Member%3Dsocket" tag="ViewCode">
+                <elementDefinition Id="247d37ed-9219-422d-8110-74a97a76b299" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="5d2bc1e5-38ed-431a-8530-50ec11183d78" name="field" profile="CSharpProfile">
+                <elementDefinition Id="c48f6a3e-f840-43a4-935f-bfbe4a61c61a" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3a26921f-ac2b-4162-8ca8-94c37a2d1d44">
+                    <propertyInstance Id="0db391d7-332c-4974-b9c4-efd5dd1edaca" name="ClrAttributes">
+                      <elementDefinition Id="0bb12851-31cf-409b-8a0f-896a47b09f81" />
+                    </propertyInstance>
+                    <elementDefinition Id="572ff4cd-af42-4d39-bd58-f8635aea073e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0f0fcaed-4796-43cb-8c59-d3e3ea9da5db">
+                    <propertyInstance Id="47550901-28dd-4bf7-962a-402e023f9c5d" name="IsConst" value="false">
+                      <elementDefinition Id="cfd8bab4-3ca2-4bec-aaa3-f3f092ceb711" />
+                    </propertyInstance>
+                    <elementDefinition Id="d56e80c6-4318-4b80-a54a-0a0a5c7e6d58" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ab8efb93-ee3f-47ea-ae8e-8f53c173b0c7">
+                    <propertyInstance Id="bf04c624-a224-44fc-945f-137c32369674" name="IsNullable" value="false">
+                      <elementDefinition Id="fd8b01f8-621f-4f11-bf96-b6fff4c4736b" />
+                    </propertyInstance>
+                    <elementDefinition Id="81db7304-cf60-46da-b4e2-0716257e0845" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b141e003-bf76-48f6-9956-c59f2d7c7825">
+                    <propertyInstance Id="120022cd-e59b-439c-aa90-84b385566ff2" name="IsVolatile" value="false">
+                      <elementDefinition Id="8fcf662c-a023-4043-84de-3a86ca7d023f" />
+                    </propertyInstance>
+                    <elementDefinition Id="0b97a811-4603-47c6-80e1-91e4191ac645" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="89252245-4d9f-4981-a849-ef94f7b8a2fe">
+                    <propertyInstance Id="774be235-d33c-4260-85c5-fe6e3f2a3ac8" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="a68e2e7e-41ba-493f-a04b-2486cf985c0a" />
+                    </propertyInstance>
+                    <elementDefinition Id="22ee5863-5ddf-4325-96d6-51d290f390c8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="8541cb93-8ffc-4622-8737-2f151c64bcf2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="83c8cb2c-3430-4af2-99a2-60363ac23782" LastKnownName="StreamSocket" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="26164174-2c9e-40fc-af22-8cea671460dd" name="ReceiveMessages" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="ec695409-5646-4289-967e-5781fb7dc261" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Helpers Type%3DBluetoothConnectionManager Member%3D(Name%3DReceiveMessages OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2FSystem.dll&quot; Namespace%3DSystem.ComponentModel Type%3DDoWorkEventArgs)])" tag="ViewCode">
+                <elementDefinition Id="1143eaae-559b-45ef-85b9-70ea2cb17a7a" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="d9c6c47b-4c1d-4c91-a574-3173d7855113" name="method" profile="CSharpProfile">
+                <elementDefinition Id="2e094c8c-1766-4e90-b248-8c64d2e8e720" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="877887e1-d094-40f5-bd86-55604e261f1d">
+                    <propertyInstance Id="b8b0244b-28b0-42d3-b611-d7a13b15d3ab" name="ClrAttributes">
+                      <elementDefinition Id="4e325960-797f-42ce-bba9-4a3b8349b5ec" />
+                    </propertyInstance>
+                    <elementDefinition Id="0e6ae6c1-7d32-48d1-a935-0af7333fcaf5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1d15e2b0-a4d9-494f-a11d-d565c08fb2dc">
+                    <propertyInstance Id="ec77bbd8-9f0c-43ce-945e-c252daccfaf3" name="IsPartial" value="false">
+                      <elementDefinition Id="8e3cf817-ad99-45a8-a1d4-efff073b35a5" />
+                    </propertyInstance>
+                    <elementDefinition Id="2c8f9ed3-c51a-40e1-8ef0-b99028abec5a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="217cb949-e1ff-43a3-980b-23602f078072">
+                    <propertyInstance Id="194a0baa-001a-44f9-8dda-6b30d6dae37b" name="IsUnsafe" value="false">
+                      <elementDefinition Id="6c108d0d-ec6d-440c-9347-b08fd0a0d014" />
+                    </propertyInstance>
+                    <elementDefinition Id="afb23bf3-ed1a-4c09-816b-25313ff3db73" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="22103f6b-ff99-4c0b-945e-74ba9c1939bb">
+                    <propertyInstance Id="71baf0b5-f41a-42f0-bbed-15ad57b3ba5d" name="Inheritance" value="none">
+                      <elementDefinition Id="7de77aab-a99d-4f78-ab67-632603b0bad5" />
+                    </propertyInstance>
+                    <elementDefinition Id="04907cef-bbc4-41dc-a76b-0b9b8e3211d9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="65579b5b-186b-452b-bb8d-7c6cdadf059a">
+                    <propertyInstance Id="53f92626-df9c-4452-b4e5-078f1dd3e253" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="e754952f-5e3a-4c4b-be80-1fbc769bbd2a" />
+                    </propertyInstance>
+                    <elementDefinition Id="e7e65af5-3e43-4bdf-8295-2e381bcc285d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4fcc0437-3420-4955-9654-3c5ff767dc3f">
+                    <propertyInstance Id="11c1e343-cbce-4ef8-ad93-3d1600ac9a7f" name="params" value="false">
+                      <elementDefinition Id="88d409e2-5dbd-4581-9e9a-1d4376372396" />
+                    </propertyInstance>
+                    <elementDefinition Id="6ad1b686-23ba-4d2f-a3dc-ee2023ff6a98" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="9d4b85fe-5311-439c-ac0e-2dbff949e214" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="af228bca-bb2c-459b-9e50-6af50b4a0d75" name="sender" direction="In">
+                  <referencesInternal>
+                    <reference Id="1661ea0a-d122-4c92-a9c9-0a501e55b845" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Helpers Type%3DBluetoothConnectionManager Member%3D(Name%3DReceiveMessages OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2FSystem.dll&quot; Namespace%3DSystem.ComponentModel Type%3DDoWorkEventArgs)]) ParameterIdentifier%3Dsender" tag="ViewCode">
+                      <elementDefinition Id="8fd8b975-6361-43d6-9811-86c1f4afc6bd" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="2a2683f1-09e1-442b-87c0-c5e64e255170" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1944bbb1-74b9-43f9-8926-0cc08512ec26" LastKnownName="Object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c2bd8ba9-2c87-4682-b3a2-3b7851be5262" name="e" direction="In">
+                  <referencesInternal>
+                    <reference Id="a9fbcfcf-e817-46d5-aa24-2ab8e65449f1" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Helpers Type%3DBluetoothConnectionManager Member%3D(Name%3DReceiveMessages OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2FSystem.dll&quot; Namespace%3DSystem.ComponentModel Type%3DDoWorkEventArgs)]) ParameterIdentifier%3De" tag="ViewCode">
+                      <elementDefinition Id="42735727-cdba-4de3-972a-b1e76df30f4c" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="d7d6d9b8-8bab-4b70-90a6-8c1339e08bca" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b1bfcc45-8ccb-4eb8-aa60-b06451190158" LastKnownName="DoWorkEventArgs" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="f49b8db8-6ba2-4336-94fb-96ac6fa5c9ef" name="SendCommand" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="f7d4402f-88c7-4323-8529-3560e2b637ce" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Helpers Type%3DBluetoothConnectionManager Member%3D(Name%3DSendCommand OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])" tag="ViewCode">
+                <elementDefinition Id="8cfc3700-767e-464f-bfca-3cca39e7b2db" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="4438911d-574f-47d7-928d-6507d058f930" name="method" profile="CSharpProfile">
+                <elementDefinition Id="92e6907c-d5bd-4b96-8367-5d6507920e47" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2c7da035-e329-453c-9514-6ade0480ae02">
+                    <propertyInstance Id="fcf4cf92-6046-4432-ba0d-4cc1a50e6daa" name="ClrAttributes">
+                      <elementDefinition Id="ff42b88f-1127-44c5-b53c-4d7d1164f158" />
+                    </propertyInstance>
+                    <elementDefinition Id="01f2fff7-eb14-4891-8ffc-07a767610e30" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="afe176c5-9d31-4c1a-aebe-71108cdd46fc">
+                    <propertyInstance Id="be703b45-0ee4-4c92-8bca-b77750d0eae9" name="IsPartial" value="false">
+                      <elementDefinition Id="f1b82f8a-106f-42d7-81bd-c6d07b0c9ca3" />
+                    </propertyInstance>
+                    <elementDefinition Id="fcfe09ad-ccef-4a0a-8cac-1a2e82cf750f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="58f2a3a8-d4ba-4458-8e6c-1c9f89af4022">
+                    <propertyInstance Id="bf90be03-81b0-45e0-a1d9-fc0f0cb9a201" name="IsUnsafe" value="false">
+                      <elementDefinition Id="f16f0c4f-e456-43ce-8aae-0fee73cc216b" />
+                    </propertyInstance>
+                    <elementDefinition Id="a7e8944b-4eed-4165-842b-1d6637f79858" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8902b194-b650-4134-b6ba-649f2085e713">
+                    <propertyInstance Id="de9edb79-9c22-4795-919d-e81b4cd8dc24" name="Inheritance" value="none">
+                      <elementDefinition Id="decb3ba4-c8dc-4190-862b-ea75fd65ac20" />
+                    </propertyInstance>
+                    <elementDefinition Id="73889072-5adb-42a3-b6b6-bfccc8839833" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="efc703a8-6a21-490d-aadb-6c9b9ee29ca4">
+                    <propertyInstance Id="1f76f161-ca92-4169-95c0-48e897b7bcd2" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="5416a580-4fae-4d7b-96c6-6997867371e4" />
+                    </propertyInstance>
+                    <elementDefinition Id="9e180a40-e28f-41c0-aa1f-68ba706d366e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7887089c-4273-4d22-b3bf-d03c944e0de7">
+                    <propertyInstance Id="c50f506f-9fa1-4f2b-8922-24c7312866d1" name="params" value="false">
+                      <elementDefinition Id="9c5b0514-4961-4d70-898e-e146ca97dd63" />
+                    </propertyInstance>
+                    <elementDefinition Id="9124c946-a28a-42d5-a674-62a7507bcf57" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="44b93790-4274-48e2-afe6-c0d1eda8404f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="57f6a572-2a4c-49eb-8a56-c0eb6558378b" direction="Return">
+                  <elementDefinition Id="229575da-8913-4949-874c-f1cb967c3ab2" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d735fe61-6f7f-4090-9387-918f99f52ffa" LastKnownName="Task&lt;UInt32‎&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9049ee8b-9308-47ae-8dcf-ce4011d4b7f4" name="command" direction="In">
+                  <referencesInternal>
+                    <reference Id="7cc8291c-bddb-44af-859a-81ba959690d2" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Helpers Type%3DBluetoothConnectionManager Member%3D(Name%3DSendCommand OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dcommand" tag="ViewCode">
+                      <elementDefinition Id="0db247bf-f207-4972-af32-da4d2806bf62" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="68de634f-264e-4674-a953-1201a97f5d74" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="fa57cbb6-2512-4a4e-b233-16f368c79780" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="4b291909-13c6-4666-beed-95a3d7425655" name="BluetoothConnectionManager" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="7736a2e1-5ded-4e00-9961-604e2231be79" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Helpers Type%3DBluetoothConnectionManager Member%3D.ctor" tag="ViewCode">
+                <elementDefinition Id="e561db4a-90e9-464b-a752-1511b754e8df" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="0d2a2454-8f54-41f0-b5ca-a9e49620528a" name="method" profile="CSharpProfile">
+                <elementDefinition Id="d1ab7b92-725a-4505-909b-e0955ca33238" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d4617388-af34-4f61-9d3b-ab4f289d66c2">
+                    <propertyInstance Id="d928f69b-541c-4b46-88af-0ce01e55ff9c" name="ClrAttributes">
+                      <elementDefinition Id="a0e35a9d-bd74-4c84-abaf-03bd6a772545" />
+                    </propertyInstance>
+                    <elementDefinition Id="92d0a50e-b3a6-45ec-9ed0-a27c8aa7e3ca" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b80dd5fe-941c-4f91-9f30-3a7384dafcd8">
+                    <propertyInstance Id="aa197320-c2ed-45e4-8413-de7f411896b4" name="IsPartial" value="false">
+                      <elementDefinition Id="b9145132-e3f8-4ab1-9e6f-b7626e5be27e" />
+                    </propertyInstance>
+                    <elementDefinition Id="63854e81-183b-4fb1-91b9-02c4bead9602" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f2d64036-d55c-4518-9036-92d825e29118">
+                    <propertyInstance Id="814f0002-3c2a-4371-ae3d-f4bcfcf85f86" name="IsUnsafe" value="false">
+                      <elementDefinition Id="f3634684-d852-4e12-ba4a-52b39a44c96e" />
+                    </propertyInstance>
+                    <elementDefinition Id="fa22ea08-06e3-4bc0-a620-2709068043a8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d3a53204-48f9-4b5a-b879-4b936918d0e9">
+                    <propertyInstance Id="7465e903-36ba-4f7e-8940-535c15a64775" name="Inheritance" value="none">
+                      <elementDefinition Id="53e7121f-ec6c-40e2-8ef9-64e260b2c379" />
+                    </propertyInstance>
+                    <elementDefinition Id="a0489cd2-afc3-49ad-9c8a-24495b2ff1be" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="dde1ceba-f9b9-4a07-b76e-3215aa8545f9">
+                    <propertyInstance Id="ceb17942-085f-4159-96f6-bb0f22f959c7" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="c6c28cf4-0665-4149-bfaf-254be0001147" />
+                    </propertyInstance>
+                    <elementDefinition Id="26380dad-5f55-4b3c-b9cb-0696dee27c3b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b00f2492-9e32-4636-9b37-b59acde80da1">
+                    <propertyInstance Id="2857388c-e267-4044-a467-1638b9cc9be5" name="params" value="false">
+                      <elementDefinition Id="cdfd46c7-b3c0-46fd-989d-51935adcc660" />
+                    </propertyInstance>
+                    <elementDefinition Id="45136667-98a0-4166-827a-40eb8245caa4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="2062ef8e-3eb8-40dd-b46c-59c9f9eb28b9" />
+          </operation>
+          <operation Id="dc2d5a03-66c5-4ba4-a662-ca926e76dd62" name="Connect" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="3f2b894e-35e3-44fa-b145-5029a1612a1e" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Helpers Type%3DBluetoothConnectionManager Member%3DConnect" tag="ViewCode">
+                <elementDefinition Id="154c80fd-e1c4-4915-9897-58c3bbcf10a8" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="28cf47fb-6247-4e79-be42-e639737c0c88" name="method" profile="CSharpProfile">
+                <elementDefinition Id="22935acd-e3c9-48ae-b5e6-87800efeb14f" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7846c606-1387-4d53-816e-115ac47fd166">
+                    <propertyInstance Id="847a1be2-d0a8-4347-8d8a-fa29d880d931" name="ClrAttributes">
+                      <elementDefinition Id="786a42a1-e845-458c-bf5e-f9b6ceca3441" />
+                    </propertyInstance>
+                    <elementDefinition Id="be06b357-2ded-4c89-a4da-d10ae2cd86b5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1c21115d-64b9-4847-8db1-f15c798ebe13">
+                    <propertyInstance Id="fdca6b05-37bc-4723-ab26-a34360936d3d" name="IsPartial" value="false">
+                      <elementDefinition Id="d4029100-2557-419b-ba40-0e17465e99e2" />
+                    </propertyInstance>
+                    <elementDefinition Id="71380be7-f047-496d-a192-b72fe90baa4b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="46d99dcc-7741-424a-8e8d-9e6c0e4fe5ec">
+                    <propertyInstance Id="a26aeec2-7908-4fdf-8687-818e4d7712b1" name="IsUnsafe" value="false">
+                      <elementDefinition Id="eb1157ff-310a-40b5-b3c1-38f7580d4076" />
+                    </propertyInstance>
+                    <elementDefinition Id="f63bd8f9-a3c6-4d3c-b970-6652f4eabbe1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d1502774-528c-44cb-a177-b64f84011b69">
+                    <propertyInstance Id="46e286b5-5e1a-4498-b153-6c15c0022e22" name="Inheritance" value="none">
+                      <elementDefinition Id="5b6eef4e-b24a-4111-86f8-de510b771518" />
+                    </propertyInstance>
+                    <elementDefinition Id="236d3d40-cb61-4a1f-b0a0-d4faab7b77a7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4cb3a79e-9943-428f-b933-26ab475633ef">
+                    <propertyInstance Id="f85dfb1d-a58f-479e-839c-c2f2c7ff9d4e" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="15c0c3bc-22f8-49c0-b2a8-88fdfedbb64f" />
+                    </propertyInstance>
+                    <elementDefinition Id="6cb62ed6-741d-4dd3-a7aa-e5432eb2065d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4adb5faf-dc1c-455a-9f2a-4d9a06f47312">
+                    <propertyInstance Id="dc0d2e35-4c79-4485-8e98-5243d0d313fd" name="params" value="false">
+                      <elementDefinition Id="27e60704-5ec7-4aca-9312-7a452b72ba9b" />
+                    </propertyInstance>
+                    <elementDefinition Id="30755fc1-ae67-40b0-9f4b-ba386957d088" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="b0554330-3bab-484a-afbb-7d34a279a206" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5ea2ecd3-eb53-4440-809b-31f4c479a054" direction="Return">
+                  <elementDefinition Id="3b15fb20-ef20-46ed-a1ab-92c5bbd077eb" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="78a45266-271a-4f34-b195-e12e20e04d8b" LastKnownName="Task" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="0b598b55-a09e-4c1e-81f3-5e41d2436a61" name="Initialize" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="c35b6509-5663-4d54-acd0-a1963a123e1e" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Helpers Type%3DBluetoothConnectionManager Member%3DInitialize" tag="ViewCode">
+                <elementDefinition Id="b985c2f2-3269-4ad5-b8fe-1ba1cd80c3b1" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="6734d810-ab9a-4911-b444-0f2051c6add3" name="method" profile="CSharpProfile">
+                <elementDefinition Id="8a8fc7e5-3c09-4d64-9139-183d31644a7d" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ee149b8e-0139-47f3-8dde-97feb1313249">
+                    <propertyInstance Id="c5b3db39-dadd-49c1-9b52-b41b74f21107" name="ClrAttributes">
+                      <elementDefinition Id="9592809c-a95c-449a-b7de-ab652e75fb76" />
+                    </propertyInstance>
+                    <elementDefinition Id="f5a4f493-7772-45ce-baf3-559974f0c5d5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="27a42129-2584-4124-880b-d0fa34343208">
+                    <propertyInstance Id="ed8ea8aa-9a63-4f2a-8fbb-0f5a7bbe8bc5" name="IsPartial" value="false">
+                      <elementDefinition Id="0dcd7655-d2b1-4ca2-9189-634a609bbd0f" />
+                    </propertyInstance>
+                    <elementDefinition Id="f68f23fb-02e7-4f0e-9058-62395ac7e56b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="74015589-e6ce-4a97-8a60-7debc7a89c79">
+                    <propertyInstance Id="2ba139d5-88ba-4500-938c-2438f22e78f0" name="IsUnsafe" value="false">
+                      <elementDefinition Id="a8ccb744-ed24-4102-abe3-99a2a29f9ddb" />
+                    </propertyInstance>
+                    <elementDefinition Id="f6478275-c707-4c1d-96b7-dd86f704a308" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9020da48-7676-46b8-9180-94e4a614354e">
+                    <propertyInstance Id="4f4cd9bf-6ca9-4bd6-9bf1-61b80c3d9233" name="Inheritance" value="none">
+                      <elementDefinition Id="8d416199-275d-48a0-b9a4-374720feabef" />
+                    </propertyInstance>
+                    <elementDefinition Id="5f6ef3ae-25d0-474b-b409-cf0a84fa3fb8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a7db2a97-61f0-47fc-8c80-3198dab8c0f6">
+                    <propertyInstance Id="6c925871-3d5d-455b-a170-22b795f18ed5" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="a076df8b-3e01-40de-96ee-dfe61e5b9246" />
+                    </propertyInstance>
+                    <elementDefinition Id="2ec003cd-369d-4db1-a85f-c5deedea0645" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d9a4eede-ba54-488f-afb5-89a297e9d773">
+                    <propertyInstance Id="72508413-0ba2-4e98-b1e4-8d5d52d75829" name="params" value="false">
+                      <elementDefinition Id="20616f39-a6fb-4c4e-90a1-0364e6cd285f" />
+                    </propertyInstance>
+                    <elementDefinition Id="a3ba7727-d307-4120-8d82-da1b33ec5564" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="fbdb12a1-a428-4bc0-9e9d-f16e644481e0" />
+          </operation>
+          <operation Id="131a12b6-6232-420b-b84f-688e73f6450b" name="Terminate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="2265c33d-552a-4c4f-8f4b-49f2de8dff71" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2FProjects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2Fx86%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Helpers Type%3DBluetoothConnectionManager Member%3DTerminate" tag="ViewCode">
+                <elementDefinition Id="4ab55e8f-9b45-4533-baf4-7125c23ebb4f" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="ece3cdb1-cfa9-4897-bbda-297e85792e75" name="method" profile="CSharpProfile">
+                <elementDefinition Id="1246bfbd-2376-4740-b35e-126aef9d9c48" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="09612690-f2be-46c5-bcfe-d3bb8345d578">
+                    <propertyInstance Id="0eba2f67-3518-462f-b79a-eae35675be2f" name="ClrAttributes">
+                      <elementDefinition Id="561238b2-84cf-4c2e-b7ea-34c744cca9b3" />
+                    </propertyInstance>
+                    <elementDefinition Id="b5468e12-762f-4cfb-b37a-5f669d01db53" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8ebd66a3-59dc-422d-bb59-b3c1b8306112">
+                    <propertyInstance Id="d0d8aa47-d0bb-4135-ac43-77f12dafca07" name="IsPartial" value="false">
+                      <elementDefinition Id="e7412f2d-adfe-425a-be46-0fa51ddbb535" />
+                    </propertyInstance>
+                    <elementDefinition Id="d852fe7f-aef3-4598-bf77-7089e066ca12" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="dfd7a603-2438-4f3c-b953-5dd7b50bb923">
+                    <propertyInstance Id="44273933-bd77-4c22-aab6-91d37b127166" name="IsUnsafe" value="false">
+                      <elementDefinition Id="cba538b3-7170-48ff-b744-a27cc14f901b" />
+                    </propertyInstance>
+                    <elementDefinition Id="17cb832a-de27-477a-89c1-b08b8344a872" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="898af2a7-0ab4-43d9-95a2-3783d38b9e25">
+                    <propertyInstance Id="e130b40e-c871-4a3e-bc0c-8f1324c94ff0" name="Inheritance" value="none">
+                      <elementDefinition Id="963abf37-a0a7-45df-b765-be199c80f731" />
+                    </propertyInstance>
+                    <elementDefinition Id="f4763589-c1c0-4a0d-be7f-c5257e0df92c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="28bc6c3c-7687-4aef-b7af-52d50c494db0">
+                    <propertyInstance Id="a295134f-85cd-427b-8072-c9276615e7dd" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="0e773643-8023-4b38-b083-64113d310822" />
+                    </propertyInstance>
+                    <elementDefinition Id="7a1bd1ee-c174-42fb-9269-ca8fc0ec14fd" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="af7d24a6-4cf9-4536-b4dc-05636bf68d69">
+                    <propertyInstance Id="20ff59ad-8451-4f82-99ce-9ec49ebc21c5" name="params" value="false">
+                      <elementDefinition Id="2925d5e6-f5fa-4a1a-84d6-e8eb9fc9dbca" />
+                    </propertyInstance>
+                    <elementDefinition Id="30cb0bb3-97dc-4c73-a22d-f1abb07a565f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="593a0eb7-0d09-42c9-aea3-a2f503b0499f" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="8726ea1d-90aa-4810-809d-50f4d7eb79b7" name="MessageReceivedHandler" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::GPSTracker::Helpers::MessageReceivedHandler">
+        <elementDefinition Id="d2cfabce-d04c-421a-87fc-c95e63780360" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c5567b62-17bc-465e-a884-f08ae18b5dd4" name="BackgroundWorker" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::System::ComponentModel::BackgroundWorker">
+        <elementDefinition Id="30b8a150-4266-4b89-9e13-f5f660a01690" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="45742c3a-c16b-46f1-918d-c27125740396" name="DataReader" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Windows::Storage::Streams::DataReader">
+        <elementDefinition Id="b9f4fc5f-b18a-4897-a583-d2232933d52f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="9b4fc711-514f-4e51-8826-5c1b77c4ff8c" name="DataWriter" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Windows::Storage::Streams::DataWriter">
+        <elementDefinition Id="eb2f8db5-d5fa-4e39-aedb-43a1e0759f27" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="83c8cb2c-3430-4af2-99a2-60363ac23782" name="StreamSocket" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Windows::Networking::Sockets::StreamSocket">
+        <elementDefinition Id="cd2b738a-5791-4d1f-a550-d0c988afffa6" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b1bfcc45-8ccb-4eb8-aa60-b06451190158" name="DoWorkEventArgs" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::System::ComponentModel::DoWorkEventArgs">
+        <elementDefinition Id="53fd78ea-4107-46fe-81e6-8171d3640d7d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d735fe61-6f7f-4090-9387-918f99f52ffa" name="Task&lt;UInt32‎&gt;" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::System::Threading::Tasks::Task&lt;UInt32‎&gt;">
+        <elementDefinition Id="40dc2875-4dc6-417d-ae55-834287642d7b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="78a45266-271a-4f34-b195-e12e20e04d8b" name="Task" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::System::Threading::Tasks::Task">
+        <elementDefinition Id="6ff3a2dc-8c1f-4377-bdf4-c2dc0cbd71d2" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="821ffaa4-0bf5-4019-9951-9015046ece28" name="ModelingProject1">
+    <elementDefinition Id="55b5d800-6917-4bd7-976e-708c25577a3c" />
+  </package>
+</logicalClassDesignerModel>

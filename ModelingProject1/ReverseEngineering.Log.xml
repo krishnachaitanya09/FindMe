@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2015-04-19T17:09:45" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: '26ec14a2-dc45-4eee-8037-a53a82c502a1' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::GPSTracker' -  (Package)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::GPSTracker::Helpers' -  (Package)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::GPSTracker::Helpers::BluetoothConnectionManager' -  (Class)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::GPSTracker::Helpers::BluetoothConnectionManager::BluetoothConnectionManager' -  (Operation)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::GPSTracker::Helpers::BluetoothConnectionManager::Connect' -  (Operation)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::GPSTracker::Helpers::BluetoothConnectionManager::dataReader' -  (Property)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::GPSTracker::Helpers::BluetoothConnectionManager::dataReadWorker' -  (Property)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::GPSTracker::Helpers::BluetoothConnectionManager::dataWriter' -  (Property)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::GPSTracker::Helpers::BluetoothConnectionManager::Initialize' -  (Operation)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::GPSTracker::Helpers::BluetoothConnectionManager::MessageReceived' -  (Property)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::GPSTracker::Helpers::BluetoothConnectionManager::ReceiveMessages' -  (Operation)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::GPSTracker::Helpers::BluetoothConnectionManager::ReceiveMessages::e' -  (Parameter)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::GPSTracker::Helpers::BluetoothConnectionManager::ReceiveMessages::sender' -  (Parameter)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::GPSTracker::Helpers::BluetoothConnectionManager::SendCommand' -  (Operation)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::GPSTracker::Helpers::BluetoothConnectionManager::SendCommand::command' -  (Parameter)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::GPSTracker::Helpers::BluetoothConnectionManager::socket' -  (Property)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::GPSTracker::Helpers::BluetoothConnectionManager::Terminate' -  (Operation)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::GPSTracker::Helpers::MessageReceivedHandler' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System' -  (Package)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::ComponentModel' -  (Package)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::ComponentModel::BackgroundWorker' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::ComponentModel::DoWorkEventArgs' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Object' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Threading' -  (Package)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Threading::Tasks' -  (Package)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Threading::Tasks::Task' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Threading::Tasks::Task&lt;UInt32‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::UInt32' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Windows' -  (Package)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Windows::Networking' -  (Package)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Windows::Networking::Sockets' -  (Package)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Windows::Networking::Sockets::StreamSocket' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Windows::Storage' -  (Package)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Windows::Storage::Streams' -  (Package)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Windows::Storage::Streams::DataReader' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::Windows::Storage::Streams::DataWriter' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'String' -  (PrimitiveType)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::System::ComponentModel::DoWorkEventArgs to ModelingProject1::System::EventArgs (Generalization)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::System::Threading::Tasks::Task&lt;UInt32‎&gt; to ModelingProject1::System::Threading::Tasks::Task (Generalization)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::System::Threading::Tasks::Task to ModelingProject1::System::Threading::Tasks::Task (Generalization)" />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="High" Text="(1) type(s) fully reverse engineered." />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="High" Text="(10) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2015-04-19T17:09:51" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+</Log>

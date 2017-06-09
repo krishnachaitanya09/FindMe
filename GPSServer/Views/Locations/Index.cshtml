@@ -1,0 +1,105 @@
+﻿@model IEnumerable<GPSServer.Models.Location>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Session.SessionID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.User.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Latitude)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Longitude)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastUpdate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Speed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Direction)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Distance)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GpsTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LocationMethod)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Accuracy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventInfo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Session.SessionID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.User.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Latitude)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Longitude)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastUpdate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Speed)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Direction)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Distance)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GpsTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LocationMethod)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Accuracy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventInfo)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.GPSLocationID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.GPSLocationID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.GPSLocationID })
+        </td>
+    </tr>
+}
+
+</table>

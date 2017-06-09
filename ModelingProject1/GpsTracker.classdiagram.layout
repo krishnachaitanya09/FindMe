@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12.125, 8.5" name="GpsTracker">
+  <logicalClassDesignerModelMoniker Id="84ee6ee3-34ff-439a-b8bf-3a4d6d6bb924" />
+  <nestedChildShapes>
+    <packageShape Id="79b042c6-5508-4755-b513-42de82e962e1" absoluteBounds="0.5, 2, 1.5, 1" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="5f91157b-4c34-4669-a106-f8b1bd39bb84" LastKnownName="GPSTracker" />
+    </packageShape>
+    <packageShape Id="585ab3ab-ad34-4948-baff-ba0cf564c213" absoluteBounds="6.75, 0.5, 5.125, 2.125" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="b31ba218-ef93-4fdc-a959-fc315fa06f49" LastKnownName="Controls" />
+    </packageShape>
+    <packageShape Id="ce4b4fd5-b879-496e-8080-53e18e68b776" absoluteBounds="2.5, 2, 1.5, 1" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="26c9e052-b520-46d0-9776-4c37396db7f0" LastKnownName="Helpers" />
+    </packageShape>
+    <packageShape Id="667d16a1-3a63-41f8-80b6-d6976db608b7" absoluteBounds="0.5, 3.5, 3.125, 1.125" customColor="255, 249, 230" hideQualifiedName="false">
+      <packageMoniker Id="d5960c99-4e12-4ec3-a01a-cc13ea13b932" LastKnownName="Model" />
+    </packageShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

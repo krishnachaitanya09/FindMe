@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="19875289-91e6-452c-bd66-456c4aae6180" name="HardwareActivityDiagram" linkedPackageId="577ca5d2-0f7b-4bf5-b456-511934391149" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="cfee6473-dd09-46d8-bcc9-f95bbfe030f0">
+      <elementDefinition Id="7a1a7dd8-9f0f-4fb2-912c-377b3ab94e70" />
+      <body>Threats != NULL
+</body>
+    </comment>
+    <comment Id="340cd5b7-9872-4465-8469-ea87c6a0a32f">
+      <elementDefinition Id="cb903019-ae08-4577-9e79-fa07d14c1e8c" />
+      <body>Connected
+</body>
+    </comment>
+    <comment Id="697f3939-6846-4a18-8dd7-3eb975ccfb73">
+      <elementDefinition Id="985b6608-8d2c-4615-af87-a630fcad396e" />
+      <body>Check hardware connection
+</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="32f0c967-1d2a-4737-935c-4d104a97e1e8">
+      <profileInstance Id="ae914afb-15a3-4fbd-8e0a-254afe7d80b4" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a0b23215-0c48-45a4-8267-f3101e024d63">
+      <profileInstance Id="b8bb9e83-07ac-48b2-9e94-b0c5d6deab2d" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="9b52f1b1-62cc-45bd-9b50-ee52570c2582">
+      <profileInstance Id="0ba48c73-d56f-498f-87e8-79715287761d" name="CSharpProfile">
+        <elementDefinition Id="0cdd7879-024d-4dad-b8a8-f490a6796b5c" />
+      </profileInstance>
+      <elementDefinition Id="11a6bf9f-f991-415d-b618-246e07530282" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="0e6a3b0e-158d-4239-94fe-96e13a91dab9">
+      <profileInstance Id="152759c3-0316-49f1-99f6-21e9452be4bc" name="TextTemplateBindings">
+        <elementDefinition Id="6bf54a53-0ac1-451a-8939-7f850fb62d74" />
+      </profileInstance>
+      <elementDefinition Id="2d3c1c2c-38d1-440b-9968-beeb2a6b86ba" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="63ea694b-d33d-4f43-84a5-8538b2bd1b4e" name="HardwareActivityDiagram" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="b4a95174-5378-4a96-8014-e55671cc940a" />
+        <nodes>
+          <initialNode Id="b1f357ac-68a6-4740-a40e-55e990f2f060" name="Initial1" isLeaf="false">
+            <elementDefinition Id="d4411640-1fb4-4441-be74-1bd4b14685f5" />
+            <flowNodeTargets>
+              <controlFlow Id="0fcfdbf6-1590-4846-bab0-b222d870b0ef" isLeaf="false">
+                <opaqueActionMoniker Id="ac1c57f1-322b-4572-aad9-5df3a7ad72ee" LastKnownName="Send Location" />
+                <elementDefinition Id="e7257089-69bd-45ee-955f-da941ee85b0a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="ac1c57f1-322b-4572-aad9-5df3a7ad72ee" name="Send Location" isLeaf="false">
+            <elementDefinition Id="0e6049ec-b5cf-4731-a421-2f3e5703a97d" />
+            <flowNodeTargets>
+              <controlFlow Id="ccdd0b47-76e0-4e08-acea-09863b4ffb52" isLeaf="false">
+                <decisionNodeMoniker Id="b4854ab2-a2d2-40b1-9fd4-1a180927ea31" LastKnownName="Authenticate user" />
+                <elementDefinition Id="9a07c6c0-f62a-46bc-b5e8-29f08a09ee87" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="b4854ab2-a2d2-40b1-9fd4-1a180927ea31" name="Authenticate user" isLeaf="false">
+            <description>Authenticate user</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="9d1ceb29-022e-4c6d-a19f-32d5ec52617d" name="TextTemplateBindings" profile="TextTemplateBindings">
+                <elementDefinition Id="642f2803-c5d3-44d3-881a-c1e8486eacbb" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="aa3455e2-18ca-4fb7-a778-5e2ed5683bf6">
+                    <propertyInstance Id="cb99c209-ed4b-4926-acf6-bfaada42c643" name="Alias">
+                      <elementDefinition Id="f3d93185-c51b-47da-b905-0f741b500b45" />
+                    </propertyInstance>
+                    <elementDefinition Id="a108ad4f-649c-4f93-bacf-13e3a3d73d99" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a9620d59-ebd5-4e32-9487-72e0625092d3">
+                    <propertyInstance Id="33b772c5-e9d6-4430-811c-7dd659db8875" name="TemplateFilePath">
+                      <elementDefinition Id="68e4a386-2261-4ede-8d83-1c5cdd7ae027" />
+                    </propertyInstance>
+                    <elementDefinition Id="13b31ee0-d1cf-4645-a897-60f951c056b9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ead8b09b-092e-46b6-ab70-3b51b920835c">
+                    <propertyInstance Id="90775b04-a08f-4a0a-93c7-d65bacb6140c" name="ProjectPath">
+                      <elementDefinition Id="97b064aa-05d7-4487-a03d-de92946e52df" />
+                    </propertyInstance>
+                    <elementDefinition Id="dba7c45e-c591-437a-a061-4cfbc0303ecc" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fe774325-6fef-46f5-850b-acff9fd54488">
+                    <propertyInstance Id="51b9a9cd-f777-4548-ac09-31cccc358dad" name="TargetDirectory">
+                      <elementDefinition Id="a037e761-b714-459d-87d5-d1a25523bf7a" />
+                    </propertyInstance>
+                    <elementDefinition Id="ca1bcb68-30d2-4bb3-b90e-ea6aecbf7ea1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d539f24e-a058-4e8d-a0ea-b79e7770804c">
+                    <propertyInstance Id="6bb162c8-c604-41d2-99c9-a0c34888fde1" name="TargetName">
+                      <elementDefinition Id="395765df-5b87-4f1c-94a8-8946095fd34b" />
+                    </propertyInstance>
+                    <elementDefinition Id="ab765b8c-bfd9-4de3-99b8-895657517dec" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2db29c31-a16a-48d3-813b-979a79cd1d1f">
+                    <propertyInstance Id="6e010de9-cd2b-4f17-ac43-859241e62879" name="Overwrite">
+                      <elementDefinition Id="3430e83c-9d6b-4f98-b75c-a1a86a2136e3" />
+                    </propertyInstance>
+                    <elementDefinition Id="65814690-42fa-4a5e-a160-be3ddebd3219" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4829101c-2cac-4018-b245-661dc2e35ea9">
+                    <propertyInstance Id="0aba967a-f2a0-4a83-81a3-9e3514cd847e" name="Parameters">
+                      <elementDefinition Id="433ca321-3927-473e-9d66-0b9d20813578" />
+                    </propertyInstance>
+                    <elementDefinition Id="a4fc4624-fd39-4092-bf62-17c8de0e2882" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="ec5e326f-5a9c-454a-b7cc-9c84bf8c3813" />
+            <flowNodeTargets>
+              <controlFlow Id="4c035cb3-d960-4c95-b848-5a540d80514a" guard="True" isLeaf="false">
+                <opaqueActionMoniker Id="ac1c57f1-322b-4572-aad9-5df3a7ad72ee" LastKnownName="Send Location" />
+                <elementDefinition Id="4414b465-e3b4-4f4f-8036-8bbb29d63a29" />
+              </controlFlow>
+              <controlFlow Id="3cfed9e8-7778-4a83-a867-314e6da036fd" guard="False" isLeaf="false">
+                <decisionNodeMoniker Id="856dc55e-b857-4b98-9f10-145457fc97c5" LastKnownName="Decision1" />
+                <elementDefinition Id="c1651943-d530-4542-8d75-d75baeeab1bc" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="51b9ec91-babb-4008-9c80-ba9752399419" name="Show Threat Notification" isLeaf="false">
+            <elementDefinition Id="6f763e17-2361-464e-adff-9cc595cbf363" />
+            <flowNodeTargets>
+              <controlFlow Id="c04f9a59-9590-4f30-a789-5c8db16d7bbf" isLeaf="false">
+                <activityFinalNodeMoniker Id="39ab8e9b-bed1-46b2-a7c7-42ed09ca0320" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="77d5221d-78e3-494b-b1dc-6ce5a6450c6d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="39ab8e9b-bed1-46b2-a7c7-42ed09ca0320" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="d8d98cbd-e4d7-4d27-a1f1-11240e2bed67" />
+          </activityFinalNode>
+          <decisionNode Id="856dc55e-b857-4b98-9f10-145457fc97c5" name="Decision1" isLeaf="false">
+            <elementDefinition Id="7efc29a8-2f8c-4c95-9307-47fbbc53ee8a" />
+            <flowNodeTargets>
+              <controlFlow Id="0fdc9d61-dfcd-45a8-8736-878abd81935e" guard="Connected" isLeaf="false">
+                <opaqueActionMoniker Id="51b9ec91-babb-4008-9c80-ba9752399419" LastKnownName="Show Threat Notification" />
+                <elementDefinition Id="ca5d80d1-2eb8-46d9-b34d-8ecfa6f78866" />
+              </controlFlow>
+              <controlFlow Id="805bb91d-4642-4124-9f8f-60fc7ad7ddf6" guard="Not Connected" isLeaf="false">
+                <opaqueActionMoniker Id="19766ba6-e250-413d-9098-83a20bdd328d" LastKnownName="Connect hardware" />
+                <elementDefinition Id="af4b22b3-3cde-41b5-86c2-da2b9b47c843" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="19766ba6-e250-413d-9098-83a20bdd328d" name="Connect hardware" isLeaf="false">
+            <elementDefinition Id="de38cee0-05bf-4c26-b9a2-e56829958513" />
+            <flowNodeTargets>
+              <controlFlow Id="6e4174e6-df58-4b2e-969c-f10a1470474c" isLeaf="false">
+                <opaqueActionMoniker Id="51b9ec91-babb-4008-9c80-ba9752399419" LastKnownName="Show Threat Notification" />
+                <elementDefinition Id="2562bae7-4ea0-42f9-9019-e3223fb47ee8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="577ca5d2-0f7b-4bf5-b456-511934391149" name="ModelingProject1">
+    <elementDefinition Id="55b5d800-6917-4bd7-976e-708c25577a3c" />
+  </package>
+</activityRootModel>

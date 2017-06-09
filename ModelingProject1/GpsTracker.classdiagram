@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="84ee6ee3-34ff-439a-b8bf-3a4d6d6bb924" name="GpsTracker" linkedPackageId="e88103ac-5104-4292-a3a3-e8f7171ccd1f" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="04697187-6bcd-469a-9e95-402f5e013171">
+      <profileInstance Id="e716450d-a43a-4d29-9c19-139d707856bd" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="2338ebda-5a00-4e22-b30d-f06ca158bfc6">
+      <profileInstance Id="05f7158b-9411-40ac-b9b9-da188b257b5f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="1dbf2d52-43e6-4189-a387-3a68b7181b61">
+      <profileInstance Id="54a78919-6344-4505-8194-1f5399658432" name="CSharpProfile">
+        <elementDefinition Id="0cdd7879-024d-4dad-b8a8-f490a6796b5c" />
+      </profileInstance>
+      <elementDefinition Id="11a6bf9f-f991-415d-b618-246e07530282" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="5f91157b-4c34-4669-a106-f8b1bd39bb84" name="GPSTracker" visibility="Private">
+        <referencesInternal>
+          <reference Id="fe0613f9-417e-438e-80dd-2f6a8df19e45" handle="viewcode://./CodeSchema_Namespace?Namespace%3DGPSTracker" tag="ViewCode">
+            <elementDefinition Id="57380f2b-1532-406d-9508-cfd6990e90a9" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="70968e54-2864-4ab5-afb9-ea52d4c4e8d8" />
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="b31ba218-ef93-4fdc-a959-fc315fa06f49" name="Controls" visibility="Private">
+        <referencesInternal>
+          <reference Id="70d5d106-7433-4b5d-8612-0909bbc7915a" handle="viewcode://./CodeSchema_Namespace?Namespace%3DGPSTracker.Controls" tag="ViewCode">
+            <elementDefinition Id="0ef633b8-07d6-4cb0-b48a-7d61a09105d3" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="7dbb2735-c48c-477b-9f99-70bf74ddd990" />
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="26c9e052-b520-46d0-9776-4c37396db7f0" name="Helpers" visibility="Private">
+        <referencesInternal>
+          <reference Id="5f351511-0dfa-489f-8710-a8357f5d8307" handle="viewcode://./CodeSchema_Namespace?Namespace%3DGPSTracker.Helpers" tag="ViewCode">
+            <elementDefinition Id="4044716a-1c5b-437d-a44f-ae9519c6d0bc" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="41cdd244-63ae-45bb-9df4-fcd5bc725da4" />
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="d5960c99-4e12-4ec3-a01a-cc13ea13b932" name="Model" visibility="Private">
+        <referencesInternal>
+          <reference Id="bf8d9f83-b502-49c4-9eb4-ef15d02bd652" handle="viewcode://./CodeSchema_Namespace?Namespace%3DGPSTracker.Model" tag="ViewCode">
+            <elementDefinition Id="5a27ac23-c96c-4da0-bb9e-db8c440ad6f2" />
+          </reference>
+        </referencesInternal>
+        <elementDefinition Id="6fb8955f-0f9c-48d4-b0d5-461e5c0355d5" />
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="e88103ac-5104-4292-a3a3-e8f7171ccd1f" name="ModelingProject1">
+    <elementDefinition Id="55b5d800-6917-4bd7-976e-708c25577a3c" />
+  </package>
+</logicalClassDesignerModel>

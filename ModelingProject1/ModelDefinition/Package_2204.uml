@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="fa225af6-5633-49bf-b67d-443aa0dd92c1"
+  name="Resources"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="c5ece124-9dd9-4a2a-a3b0-40bdb9e38697"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DGPSTracker.Resources"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="3324e321-1ef9-4884-ad48-58033ebb2045"
+        name="AppResources"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="3964b98f-349a-4175-8b38-e114e3722f37"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2Fprojects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Resources Type%3DAppResources"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="7f404a14-7cbc-447f-a805-dfd9fc3f0d15"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4e180b8d-c882-4866-8fb4-1c41a0bcc4d0">
+                <propertyInstance
+                  Id="a7c926b4-71c6-48b6-92a6-dfc3acc12340"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5a4d3f5b-f7bb-400f-a367-e756f04af9b3">
+                <propertyInstance
+                  Id="ca20aa61-ef28-4f9d-928e-6733bfa16f90"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b5ed0e6e-0b20-459a-ab00-c0b450b2521b">
+                <propertyInstance
+                  Id="042b7baa-69d7-422e-ba7f-3d64923cadc4"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ca5032da-249e-4d1e-a391-14af1386b10c">
+                <propertyInstance
+                  Id="abcdaebb-c8fb-483d-9b57-960aecdbcdb5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b96c1cc1-9641-4328-af00-057b0d856e5c">
+                <propertyInstance
+                  Id="49eb8721-035a-4b44-bab4-14fbc7403ff2"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

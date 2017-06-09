@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="d96be662-bcee-4d3c-bf89-107c5c0237b7"
+  name="Tasks"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="3efbb224-c7b9-401e-8cf3-adbd3d534d67"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMicrosoft.Phone.Tasks"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="2aea0cc4-b8a1-41b8-b831-73b0d6d179cb"
+        name="PhotoResult"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="ba19100a-8229-4cdb-a80d-9dc278859ca1"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2FMicrosoft.Phone.dll&quot; Namespace%3DMicrosoft.Phone.Tasks Type%3DPhotoResult"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c2426547-5347-4497-8828-fa4e70eacd3e"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="454e2bed-103c-4ed7-95f5-144a99d243ec">
+                <propertyInstance
+                  Id="49bf3681-6ce3-469e-87fa-deb2422e374a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c0195e25-7def-4f23-be49-081b89eff44a">
+                <propertyInstance
+                  Id="2c784c13-92dd-45e5-a3a8-103526b62691"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7b5d99dd-13f0-4840-93e7-7ea1d75dea42">
+                <propertyInstance
+                  Id="b339f080-403d-4fa3-bb9c-8d36534592c9"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b7c7313d-1599-447e-959c-05c929e403d1">
+                <propertyInstance
+                  Id="ba9275f1-ce06-47e4-8dca-5cd53b6ce22c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="42fdbd64-396c-48d5-8aa0-9fd0281e0af6">
+                <propertyInstance
+                  Id="995643ec-ce49-4d7b-af81-018b3914260f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

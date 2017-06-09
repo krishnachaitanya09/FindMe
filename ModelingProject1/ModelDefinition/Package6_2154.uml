@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="3f98dfec-8760-4123-b840-1e9f0c9e2141"
+  name="Phone"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="80ca0ed6-012d-46b9-97de-6635a31ef646"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMicrosoft.Phone"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="2a9cf4a8-8b69-460e-a54d-5be0d3843144"
+        LastKnownName="Controls"
+        LastKnownLocation="Package7_2154.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="0110502c-a6ab-4834-bb29-9d2054e47edc"
+        LastKnownName="Maps"
+        LastKnownLocation="Package4_2155.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="6537a964-8de1-41db-8054-70f658b5523a"
+        LastKnownName="Shell"
+        LastKnownLocation="Package16_2155.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="d96be662-bcee-4d3c-bf89-107c5c0237b7"
+        LastKnownName="Tasks"
+        LastKnownLocation="Package_2202.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="f00c351c-95e4-41a3-b088-1f6dc4042e77"
+        LastKnownName="UserData"
+        LastKnownLocation="Package3_2204.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

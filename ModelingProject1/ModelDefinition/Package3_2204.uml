@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="f00c351c-95e4-41a3-b088-1f6dc4042e77"
+  name="UserData"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="bc4b37d0-38e8-44db-8e64-7fffb6b5a9b2"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMicrosoft.Phone.UserData"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="510086dc-52ea-4af8-95ce-b2f80d701e07"
+        name="ContactsSearchEventArgs"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="f2394bf8-883a-4f33-8bfc-34b72469d753"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2FMicrosoft.Phone.dll&quot; Namespace%3DMicrosoft.Phone.UserData Type%3DContactsSearchEventArgs"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4b6969d1-5fc1-4034-b626-7b2134a00bbc"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4c451842-3bb9-483e-9807-901fcd09f123">
+                <propertyInstance
+                  Id="10b94005-9cff-470c-bab6-5fcf28f3532e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7759cb8f-b651-4ecb-8bf1-122ffa392595">
+                <propertyInstance
+                  Id="fb56d781-07ea-4dc1-bf46-944cf0dd26cf"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="36443406-d1d6-42a4-8aae-aa6aad231b75">
+                <propertyInstance
+                  Id="583dc533-3ba6-4b33-9f50-3a3ed1e1d927"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b8b6b29d-0e57-47ac-be5d-a1b8d143c4f6">
+                <propertyInstance
+                  Id="9d3f8023-ea4d-441a-9161-6f2d6ec242f3"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="15831c4c-ecb4-4c03-a061-f2af9cb5810f">
+                <propertyInstance
+                  Id="a55e772d-63bb-4e32-a5a4-83eda3405bde"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="6fc7670e-d6ec-48b1-b70d-cf3c775d1229"
+            isSubstitutable="false">
+            <classMoniker
+              Id="dc976e5f-4440-421c-8bd3-f3cb4f30add5"
+              LastKnownName="EventArgs"
+              LastKnownLocation="Package1_2154.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

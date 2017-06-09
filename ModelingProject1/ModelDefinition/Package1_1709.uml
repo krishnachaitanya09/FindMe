@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="7d26ef23-32a6-4669-b9f6-419814cd0146"
+  name="Streams"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="804797dd-257a-4942-9171-f4f1b8868128"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DWindows.Storage.Streams"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="b9f4fc5f-b18a-4897-a583-d2232933d52f"
+        name="DataReader"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="fb83ce21-65de-48a0-9016-f877c58163af"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FWindows Phone Silverlight Kits%2F8.1%2F%2FWindows Metadata%2FWindows.winmd&quot; Namespace%3DWindows.Storage.Streams Type%3DDataReader"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="97cd91bc-b31a-4fdd-9c27-871a6f4f6fa4"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4150b651-76a9-4b4d-a865-ed2612e656ad">
+                <propertyInstance
+                  Id="d32b2384-a2f7-4452-b913-808b71f3cb50"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0ef78d70-17af-4750-89fe-8f307e2bd2d0">
+                <propertyInstance
+                  Id="41907a14-713b-4525-8819-54b120cc3bdc"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="36d00258-515f-4a1f-a0b7-2ac2170c6116">
+                <propertyInstance
+                  Id="bbe6eb43-9511-42a0-8d32-3feb4061a921"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4bdd63e6-44d9-44c1-875b-75d5d8a62279">
+                <propertyInstance
+                  Id="1cc709e1-07f2-421b-b602-6553a9828132"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2daeb7bd-a237-49ea-9fbf-c1a2a1ade020">
+                <propertyInstance
+                  Id="b8e5f50c-39f1-4713-bec3-f474cac01e4a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="eb2f8db5-d5fa-4e39-aedb-43a1e0759f27"
+        name="DataWriter"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="54a45852-24b6-4399-bdb1-010c02db8a8d"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FWindows Phone Silverlight Kits%2F8.1%2F%2FWindows Metadata%2FWindows.winmd&quot; Namespace%3DWindows.Storage.Streams Type%3DDataWriter"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="b0ce1666-5ab0-4162-964e-745ab376a63d"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b0801309-1f18-435d-b7f7-668d67ca6100">
+                <propertyInstance
+                  Id="10cd8e80-f32c-491d-90f3-4caf8e2d0570"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a168192a-b7f6-4d74-a813-bc2492194fec">
+                <propertyInstance
+                  Id="9a12112e-cf41-4946-acc7-a39e46176b1c"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="af3fe64a-229e-42ff-8aae-770f14fc7f19">
+                <propertyInstance
+                  Id="c0d45b09-6224-4eeb-8b33-67cd5fab1cf3"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4f6d70bc-7d57-4f59-b8c6-a85581bcb010">
+                <propertyInstance
+                  Id="37baba25-f267-4340-bbd0-8e0be541e199"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b378c793-8d33-49f0-a4c3-c967812db000">
+                <propertyInstance
+                  Id="f7e51d4b-bc5b-4021-999b-8ec2faa472de"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

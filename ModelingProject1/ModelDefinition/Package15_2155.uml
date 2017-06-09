@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="ee789993-bf0f-4455-bff5-06a436136a97"
+  name="Client"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="e862af75-9495-4b03-956f-b4fae10110b1"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMicrosoft.AspNet.SignalR.Client"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="c4000134-f63a-49c7-99e1-d95e0f241a19"
+        name="StateChange"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="38dbd091-313c-4ee3-b081-9122eddeca70"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2Fprojects%2FGpsTracker%2FGpsTracker%2Fpackages%2FMicrosoft.AspNet.SignalR.Client.2.1.1%2Flib%2Fportable-net45%2Bsl5%2Bnetcore45%2Bwp8%2Bwp81%2Bwpa81%2FMicrosoft.AspNet.SignalR.Client.dll Namespace%3DMicrosoft.AspNet.SignalR.Client Type%3DStateChange"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="942b7e84-bca9-4713-8594-ab443f3e7c32"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c604176e-c94b-4e7f-8b45-effb90c2ef31">
+                <propertyInstance
+                  Id="b34a4bcf-b38c-45b3-a300-131595a49ed1"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="68b790c2-4963-45fa-a0dd-2114ead117ee">
+                <propertyInstance
+                  Id="00adc951-0215-4cae-a260-e8d2655de18e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b4198ca0-86da-4dd9-bc81-50295f549fe2">
+                <propertyInstance
+                  Id="8d14738d-0bfa-49bc-ace2-bdadeb279421"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b7654d67-31fe-498a-966a-db9131dcd242">
+                <propertyInstance
+                  Id="b5fc42ad-6159-4783-93d2-2c7ea6b52b87"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f666300d-c004-4c60-b218-c7f0c7064997">
+                <propertyInstance
+                  Id="17b228b0-cb39-487f-a911-4172e8f10d68"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="22710172-19b9-4f29-846c-0e00c0ee735a"
+        name="IHubProxy"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="a253c634-5780-4ac5-b17c-6d4201a879a3"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FF:%2Fprojects%2FGpsTracker%2FGpsTracker%2Fpackages%2FMicrosoft.AspNet.SignalR.Client.2.1.1%2Flib%2Fportable-net45%2Bsl5%2Bnetcore45%2Bwp8%2Bwp81%2Bwpa81%2FMicrosoft.AspNet.SignalR.Client.dll Namespace%3DMicrosoft.AspNet.SignalR.Client Type%3DIHubProxy"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="bca2e1ff-214b-4849-92f0-71d31163032d"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6d77efa2-8d7c-4b6b-b703-99cf31fae088">
+                <propertyInstance
+                  Id="f95eaaf9-b9bf-4b14-898c-a5d22185c7a7"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c13bc99a-d549-4a93-b04f-5b2559407576">
+                <propertyInstance
+                  Id="3871005c-8b0d-4e40-bd63-532408af4ff6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eeaff3b7-2f63-4cbb-8c01-f7d2edc1eb08">
+                <propertyInstance
+                  Id="940a8028-2004-4be7-89ea-d6d23788f05d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7fb24d98-e305-4a30-b6c4-464c9ca9714d">
+                <propertyInstance
+                  Id="487debd3-9684-4ff0-adf9-737a065c8690"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4a4a5ca3-0d1e-48b9-b3ca-c06acb5004a1"
+        name="HubConnection"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="19796928-3ea7-426f-8c1b-5d56f075c768"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2Fprojects%2FGpsTracker%2FGpsTracker%2Fpackages%2FMicrosoft.AspNet.SignalR.Client.2.1.1%2Flib%2Fportable-net45%2Bsl5%2Bnetcore45%2Bwp8%2Bwp81%2Bwpa81%2FMicrosoft.AspNet.SignalR.Client.dll Namespace%3DMicrosoft.AspNet.SignalR.Client Type%3DHubConnection"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3adfd1b4-8a0d-4134-a6a6-8d2d780ffc6f"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d1be70ae-1c0d-43d0-aadb-88e6f8bbd9e1">
+                <propertyInstance
+                  Id="de8bde26-6e52-4524-9791-06a367970183"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1375b233-76aa-4818-80ff-9da4474db6cc">
+                <propertyInstance
+                  Id="7b62c8d6-6753-4fe8-8e22-a1d4ec360ae0"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f8e69794-edc7-4ff3-a2f4-5027b7f11ab9">
+                <propertyInstance
+                  Id="5ec49cc7-78ca-4379-8341-c3e186c049e6"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="76bfff65-1cea-4b57-bbaa-1a5d5879fecb">
+                <propertyInstance
+                  Id="ec342919-77b8-4b3e-a907-287298b15ef1"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e1ff27d4-fad8-467b-aecb-5d0508fd2a8d">
+                <propertyInstance
+                  Id="e6ba9977-0c5d-4b01-b635-0528ae299ac2"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

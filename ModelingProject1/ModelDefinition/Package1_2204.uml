@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="c55120ba-0fc3-43b9-92f0-f5a05aeb74af"
+  name="Threading"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="9d7c52fc-46d9-40d5-9c97-37c28574e4ff"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSystem.Threading"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="bdca8146-fe4e-4fcd-9a7a-0528d4b4c4e2"
+        LastKnownName="Tasks"
+        LastKnownLocation="Package2_2204.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="56c3425c-9b76-4e34-8ab8-d824f55ae894"
+        name="AutoResetEvent"
+        visibility="Private"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="7df3e0b1-68d2-4f94-b6ea-231602873e2e"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Threading Type%3DAutoResetEvent"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="aedff78c-24a7-444b-ae6b-aa68f5dade2b"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f63310d5-98fa-492b-b100-1a0c63fe6040">
+                <propertyInstance
+                  Id="f19f0aa5-cbaf-4153-879c-de85d0d4f99d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e4263d18-afc8-44fa-88f1-d45e9bb3280e">
+                <propertyInstance
+                  Id="b9178ff5-ab3e-449d-9996-2402292eaecb"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4725463b-33d9-4804-a608-100a5b21e91a">
+                <propertyInstance
+                  Id="1d16c1c6-82ce-4ea5-9394-cef468aa7f75"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="594496b7-0b38-4e5f-9ee2-fbfa54c9dfac">
+                <propertyInstance
+                  Id="44fc22ec-78b2-49f5-bda6-3a9869033797"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="54ec7b7f-c81b-41be-8b69-ecf16a3ec561">
+                <propertyInstance
+                  Id="35d5aeb6-a28c-4802-9dc4-78560e733c73"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

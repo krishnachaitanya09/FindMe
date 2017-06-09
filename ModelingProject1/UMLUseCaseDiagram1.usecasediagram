@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="a34e921d-fea6-4be1-81e3-872fa561e671" name="UMLUseCaseDiagram1" linkedPackageId="f380b6c3-7d3e-4396-b825-488229edb0a1" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="5ba53a98-6217-4348-a235-f697cdce7ca5">
+      <profileInstance Id="18a10543-844e-43d6-9f92-452d3417f07b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4f523497-ed07-4d25-a8f1-91c7fcac5f17">
+      <profileInstance Id="ca4ee3a4-6a68-487d-a8d6-137edd47c847" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="02ef679c-d930-4f87-8c23-3e4ccdbdf2d6">
+      <profileInstance Id="fd51ec9a-f6ed-4ac9-a018-13a8e8aeac5c" name="CSharpProfile">
+        <elementDefinition Id="0cdd7879-024d-4dad-b8a8-f490a6796b5c" />
+      </profileInstance>
+      <elementDefinition Id="11a6bf9f-f991-415d-b618-246e07530282" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="51cb8f60-eb32-4e9c-b274-555385c1fc99">
+      <profileInstance Id="4df05c9a-9e42-4b7e-9e3b-a9d534d7a075" name="TextTemplateBindings">
+        <elementDefinition Id="6bf54a53-0ac1-451a-8939-7f850fb62d74" />
+      </profileInstance>
+      <elementDefinition Id="2d3c1c2c-38d1-440b-9968-beeb2a6b86ba" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="bd842692-f1a6-4a40-bf2e-6280b0ba1289" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fd139857-04e2-42a2-843e-f016f074218d" />
+        <targetEnds>
+          <association Id="5137e948-1d38-472f-9ae6-0dde909cb534" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="05e9ec06-db01-4860-9cc8-93ceb46af2ca" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4aefdad7-fcb4-4af3-97d2-1417edbb9639" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2261421e-786d-4eb2-9d1f-214d0c604451" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5eefcb96-927b-4977-8907-2026da6e8d6c" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9f60c990-e269-4327-9972-8ec8c3f6ac27" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="36c6157c-5798-489b-bfb6-40683bd70f8c" />
+          </association>
+          <association Id="a4aae3eb-3637-47fd-8236-7c5ef6513cf4" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Switch tracking" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="de7fe677-2d2e-4137-86f4-f470f8050aa0" LastKnownName="Switch tracking" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d62660e9-2535-468c-9d3d-8e8867df7485" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fe1cd3f6-3826-45ce-94ef-e81c69904e73" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1cf26399-3f74-487e-ad70-3db0233b5c97" name="Switch tracking" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="081aa215-09f6-4ae3-83d9-568301ccec3e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1deb1038-0ebe-4fc9-a91a-6adba1c69d12" />
+          </association>
+          <association Id="68357b65-7bc1-41ac-9ddc-1a6965b6d5be" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Share location" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="175de258-a773-438c-886f-6e213a43818a" LastKnownName="Share location" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5346bf1d-d124-469e-9765-2c5a63ccecf3" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4ea87357-f4f2-4953-978f-d36f279c5d31" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="00d987ee-7c15-4c5c-9030-faa20709e1f7" name="Share location" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bb926827-2a77-465c-8025-1aacd355c305" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e74f702a-9e0d-4614-b02c-da049b289200" />
+          </association>
+          <association Id="25ebabd8-0262-41c2-a7e9-880efefd677a" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Access Location" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="234eed57-1834-4e06-9ee8-708419574678" LastKnownName="Access Location" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1080d9d2-63ef-4de0-878e-465f9f73d38d" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d326f114-9715-4180-a76c-aac734a94af9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5185e82c-6b1a-475b-90e9-e7045a2abf24" name="Access Location" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4bd53906-b593-4e1e-b9b8-f2a3f52acc28" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="aff2a324-e6a9-464c-ba7d-93d60a0f7156" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="05e9ec06-db01-4860-9cc8-93ceb46af2ca" name="Login" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a1c875bf-4a0a-4bba-9147-3d8abf2b5e2d" />
+        <additions>
+          <include Id="f8dde2c8-052d-4c7c-aecf-570bf8ad6e59">
+            <useCaseMoniker Id="9035f867-60d0-48dc-b0de-5b0eb0f39e60" LastKnownName="Valid" />
+            <elementDefinition Id="298ed090-231a-4e41-a84e-e67f630129f4" />
+          </include>
+          <include Id="8000788a-4229-494f-aab5-8f1a4a2e77f0">
+            <useCaseMoniker Id="a95ab8ca-2e7b-472b-8eb7-6aa365970be9" LastKnownName="Invalid" />
+            <elementDefinition Id="23083d1d-31c0-4f02-a199-198343b00e54" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="de7fe677-2d2e-4137-86f4-f470f8050aa0" name="Switch tracking" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="33a4fe59-0b61-4bad-a3f8-a152e06ec93c" />
+        <additions>
+          <include Id="aa16d353-bbb3-48b2-a00c-5da986461a0d">
+            <useCaseMoniker Id="c72c9150-7ad4-45e3-9579-eb27861744de" LastKnownName="On" />
+            <elementDefinition Id="3b79199e-14bd-44fd-ae94-7b9d98521846" />
+          </include>
+          <include Id="1e765e60-480d-4713-a75f-02cee638998c">
+            <useCaseMoniker Id="37bb439c-f57f-4e87-95c0-30eae9552940" LastKnownName="Off" />
+            <elementDefinition Id="29876832-4636-413e-926a-9c94dbac0011" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="175de258-a773-438c-886f-6e213a43818a" name="Share location" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6b86c2fc-bdc4-49a5-9c90-e5922c6fdfc4" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="234eed57-1834-4e06-9ee8-708419574678" name="Access Location" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b89c973f-785f-4331-a710-1a29c226bc11" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="d5018ec3-f821-4ba6-a169-9ff2ebf5009e" name="Server" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="75fd7c4b-90b0-4036-8d25-2b5821277488" />
+        <targetEnds>
+          <association Id="326ff3ee-b7da-40fe-81b3-8f121c0d1ed0" isDerived="false" sourceEndRoleName="Server" targetEndRoleName="Authenticate user" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="86a884ca-3091-4364-9f18-b7c66d1a22dc" LastKnownName="Authenticate user" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8a961aac-8c5a-44fa-8673-98472e5f7186" name="Server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="185af39e-07a8-47e2-9056-5ff250d932ac" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="05603872-5792-4bf7-82ea-f0bbb36b1612" name="Authenticate user" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c93a4b9c-41a4-44ee-a456-a1f7cd03471a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="71eeb27f-3ebc-41eb-b973-b5c4d8eb3ba8" />
+          </association>
+          <association Id="6903fbe3-c3f2-4ff0-99b2-da9894bd0868" isDerived="false" sourceEndRoleName="Server" targetEndRoleName="Save location in database" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5d8716d4-42f9-4347-9ca1-bebd7b2ec357" LastKnownName="Save location in database" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="726acef8-3b1b-4956-a3fa-6092fe64fabf" name="Server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9d4b8adc-7eda-44f8-afb9-412b2f765dfe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f8fe1b9a-1727-414a-9cd4-ec008c83aa44" name="Save location in database" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cc485dd7-6f40-49a5-b07d-cd87891b6114" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f6f7e156-e009-4b3b-a0a3-8d0ce97f4672" />
+          </association>
+          <association Id="318b2c13-4c0a-45d1-9085-c0432ee4c9ec" isDerived="false" sourceEndRoleName="Server" targetEndRoleName="Broadcast location" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3457f6a8-4b37-494b-831e-6e7602795e0d" LastKnownName="Broadcast location" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f0153c99-c039-4567-a599-89b97d9410da" name="Server" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b161c90a-5cf4-4718-a867-7af56dd69bc0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c9806539-4988-4cfd-b97a-8e5dfa7e3bf8" name="Broadcast location" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2aa7edcf-69f8-4cc9-9b2d-d92dd798ba99" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7d4486c3-7414-425e-b716-0b709b830440" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9035f867-60d0-48dc-b0de-5b0eb0f39e60" name="Valid" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9d0e7d53-0d6d-406e-95ad-48249ceb1b40" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a95ab8ca-2e7b-472b-8eb7-6aa365970be9" name="Invalid" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="11b0c99b-a30d-4a30-99dc-87df44dc56b3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c72c9150-7ad4-45e3-9579-eb27861744de" name="On" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f0523cc2-cf0d-42fa-9165-05ad55c09ec9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="37bb439c-f57f-4e87-95c0-30eae9552940" name="Off" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="aac31dfe-253f-4c95-bb20-b32db3726c1f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="86a884ca-3091-4364-9f18-b7c66d1a22dc" name="Authenticate user" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="708129a0-9d12-4db7-8d50-3a71fd80a7ab" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5d8716d4-42f9-4347-9ca1-bebd7b2ec357" name="Save location in database" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d44b3133-55b5-4f16-a420-0442ca805e11" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3457f6a8-4b37-494b-831e-6e7602795e0d" name="Broadcast location" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f59abf9d-8d53-454b-a2a6-64758d1848c3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="f380b6c3-7d3e-4396-b825-488229edb0a1" name="ModelingProject1">
+    <elementDefinition Id="55b5d800-6917-4bd7-976e-708c25577a3c" />
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="8df79efa-38fd-458c-9ef6-315ceb370109" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="c3926ce6-895a-47a5-97a0-674972759d4a" name="MainPage">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="6f329750-a259-489f-a124-9c77917eb022" direction="Forward">
+          <layerMoniker Id="eb3e515a-8173-4738-8eb0-812e15023853" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="131e3548-34fb-48e6-a8db-c96e311bee0b" name="MainPage">
+          <ArtifactNode Label="MainPage" Category="CodeSchema_Class" Id="(Assembly=../GPSTracker/Bin/Debug/GPSTracker.dll Namespace=GPSTracker Type=MainPage)" />
+          <ExpandedNode Id="(Assembly=GPSTracker Namespace=GPSTracker Type=MainPage)" Label="MainPage" Category="CodeSchema_Class">
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="eb3e515a-8173-4738-8eb0-812e15023853" name="GPSTracker">
+      <references>
+        <reference Id="cd673a8a-3d70-483b-b467-9f1d482c6e3c" name="GPSTracker">
+          <ArtifactNode Label="GPSTracker" Category="CodeSchema_Namespace" Id="(Namespace=GPSTracker)" />
+          <ExpandedNode Id="(Assembly=GPSTracker)" Label="GPSTracker.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Dsl.NamespaceUsedInAssembly" />
+          </ExpandedNode>
+          <ExpandedNode Id="(Namespace=GPSTracker)" Label="GPSTracker" Category="CodeSchema_Namespace">
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>

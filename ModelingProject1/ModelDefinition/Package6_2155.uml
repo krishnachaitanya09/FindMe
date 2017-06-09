@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="03611aae-764b-49ff-bdce-1894399d5458"
+  name="Media"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="2430ce8d-0cdd-4d43-8f13-2d20e5ba2331"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSystem.Windows.Media"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="2f081c1d-089f-4d39-8da6-09142c0d9048"
+        name="Color"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="377e97c5-70a3-4e3f-a8b4-6489af0479d6"
+            handle="viewcode://./CodeSchema_Struct?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2FSystem.Windows.dll&quot; Namespace%3DSystem.Windows.Media Type%3DColor"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3239fdf0-1a6a-4ef8-906a-0e19d3019354"
+            name="struct"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0c440ee3-9cb8-409e-a66e-bd7c4a1e2223">
+                <propertyInstance
+                  Id="d15f93fa-d8fc-4e1d-bd00-e57b7c571da3"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b3c986bf-6d28-4bc3-b120-535dbfa1bcbd">
+                <propertyInstance
+                  Id="54c85495-e69d-4306-9900-0027b5378041"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="18a9df7f-8ddb-47a3-b2c2-3406208fc66b">
+                <propertyInstance
+                  Id="6162d2aa-96fb-4ca3-b228-ff198bf2509f"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3677b5e1-e5a3-4136-9745-1d5038a40f69">
+                <propertyInstance
+                  Id="1561544b-35df-448c-b058-e1119f89d878"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="13cf1a28-3997-47aa-9a00-57eaca01eecc"
+        name="Brush"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="79d89eaa-4736-4771-a450-6a6efb7417da"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2FSystem.Windows.dll&quot; Namespace%3DSystem.Windows.Media Type%3DBrush"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="20c6638c-3f13-49c0-bc86-3db26a845d85"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e5716493-2e76-475f-9a7f-7c229817d408">
+                <propertyInstance
+                  Id="bce88e91-7420-4b81-87e5-77ab586f08e4"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6dc74420-6090-453b-b234-28b30bfa0392">
+                <propertyInstance
+                  Id="fb773f46-8f20-447c-8fa9-0c71f23e9e87"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ea98b547-3703-4a73-85a1-3d5fa9320a2f">
+                <propertyInstance
+                  Id="450a41dc-63b4-4732-8a34-8cb65cab050b"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e8f518db-73e7-4a42-84de-809d057971ea">
+                <propertyInstance
+                  Id="b14940ac-6027-44d4-b9b1-2dfe01a839a9"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="98b568d3-bbd3-49a8-a206-403a1e6600e0">
+                <propertyInstance
+                  Id="19059655-ab61-4b7b-a991-5ceb8bbb2ee2"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="e3801e89-09f3-417b-8f92-fbd8f4f5ecbe"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e1a545cf-eb41-49da-a5ec-bb6e88423e76"
+              LastKnownName="DependencyObject"
+              LastKnownLocation="Package2_2154.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

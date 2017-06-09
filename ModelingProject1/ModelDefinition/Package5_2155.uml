@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="8726fade-2112-432c-9b33-b0420ab27a30"
+  name="Controls"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="09256fcb-9912-4f48-9261-f9da4bd329b8"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMicrosoft.Phone.Maps.Controls"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="bfce9d6a-d91a-4785-8979-9e7bf5594324"
+        name="MapLayer"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="2bb31d63-8016-4904-afd3-08cc4636a9d2"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2FMicrosoft.Phone.Maps.dll&quot; Namespace%3DMicrosoft.Phone.Maps.Controls Type%3DMapLayer"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="5a67cb65-a6e6-4a4e-8681-8c4edf6a900d"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="28506e67-8a62-4930-bbd7-4fff3560ca5d">
+                <propertyInstance
+                  Id="a43d6c61-2f05-4a88-b50b-338ae611138f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1626aa6e-b9c2-490e-a2b8-6cc34ceaa7c8">
+                <propertyInstance
+                  Id="49efb9e9-fb8b-4c05-8ab0-b72d0bac518a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="04c6e87e-8eb5-47c6-825e-24985a17898e">
+                <propertyInstance
+                  Id="e1e903ff-77b8-46b6-aa59-c86279340cc2"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="96642f23-7230-4f0f-8480-ddcbf275248d">
+                <propertyInstance
+                  Id="2289cd83-0753-4bd1-bfa4-22ca15a4ac1e"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9b393441-7c95-4c59-a96f-0ee7d511a579">
+                <propertyInstance
+                  Id="4ef185aa-5195-46fb-bfd5-bfca33d3975e"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="04010d7a-8cab-48ae-a835-eccabc712245"
+        name="Map"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="e9bb4e0b-0068-4e02-8b12-757b74b09663"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2FMicrosoft.Phone.Maps.dll&quot; Namespace%3DMicrosoft.Phone.Maps.Controls Type%3DMap"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c01b73c1-6eaa-4aee-b2ac-26855cb91fc7"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="88e1536f-abab-4f9e-acaa-f751f7e0eddf">
+                <propertyInstance
+                  Id="7e16b49e-152b-4890-b95b-a378d4199a93"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="208fb823-36f8-4d43-8117-3e88284ed282">
+                <propertyInstance
+                  Id="f7409ee8-06bf-4d62-bf69-3416c6fb09b1"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fbb16251-291c-40ae-ad80-67472f708755">
+                <propertyInstance
+                  Id="91c3eed2-ede2-4f46-8d17-e5d6ff9f51a1"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d7c8e738-da7c-4a68-8e74-a6d258d300ef">
+                <propertyInstance
+                  Id="2c88de75-5293-49de-8036-b331fa18c7cc"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ac3ec386-2f1b-4abc-866f-3a28d2afea3b">
+                <propertyInstance
+                  Id="5c7fe4cf-3ddf-4a58-affa-c3ca91e59f04"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0fc0dcb1-0522-4fad-b796-3b95f138203f"
+        name="MapRoute"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="518db1e2-7fb4-4d38-be9d-b03068e22567"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2FMicrosoft.Phone.Maps.dll&quot; Namespace%3DMicrosoft.Phone.Maps.Controls Type%3DMapRoute"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="69ee6690-d522-421f-8c56-40f052fe57f8"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8bfa352a-13c7-44b2-acbe-9ccba1299fd3">
+                <propertyInstance
+                  Id="a65b76bf-389e-4b6f-92f1-1fcd17367f7b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f9b47079-b79c-45fa-9f76-b86999fd3fef">
+                <propertyInstance
+                  Id="cbbbc09f-5007-4c35-bdc4-331979fe5045"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="538f78b0-5784-46da-9dcf-31276511a563">
+                <propertyInstance
+                  Id="5464db59-0422-421f-8ba4-557d959285c9"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8b37e087-3a94-4768-925f-9eabe0b0e507">
+                <propertyInstance
+                  Id="3aede2da-a4a4-4f05-a050-c419a635a674"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b81a0905-d8a0-4fa0-96d5-38647097e178">
+                <propertyInstance
+                  Id="de52379e-1b2d-439f-b1c9-b384127b84ae"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="98dbdbc5-ddaf-45e9-9467-96ecfdb5bf27"
+        name="MapPolyline"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="293baebb-0de2-4fa7-879e-3977a30473fc"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2FMicrosoft.Phone.Maps.dll&quot; Namespace%3DMicrosoft.Phone.Maps.Controls Type%3DMapPolyline"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2cd5d8df-a009-4497-9f50-bdab162b01ae"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ab61825f-8b66-4a42-92f1-c6f04ccf583c">
+                <propertyInstance
+                  Id="fe77471e-47c9-447e-a300-41461ed896e0"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6a8ae835-0bea-4cce-b100-8fa3f704bae4">
+                <propertyInstance
+                  Id="1189af9d-e0b4-4601-b4c4-3b85770429c4"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="83da9d41-3f76-41e1-90fe-c0ce80e316f6">
+                <propertyInstance
+                  Id="0c627cb4-7655-4445-a6c4-16462cd4ff00"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4e46be1f-32b7-4c20-893e-0e3147f72677">
+                <propertyInstance
+                  Id="fd146a86-9b42-4eca-9f85-1e62f13898e1"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dc90d6fb-26cf-4a3e-bdd1-746f30aed3f4">
+                <propertyInstance
+                  Id="006ae59f-db3d-41d3-8b2c-b90aeb4048c5"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

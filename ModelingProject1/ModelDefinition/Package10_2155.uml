@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="c8736c78-69fb-4435-ad7c-e0f57b158a73"
+  name="Windows"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="32e4240a-2f06-4853-9a6c-2da56a8591c6"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DWindows"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="322bf391-bdaf-4c35-95bc-09b3fc861424"
+        LastKnownName="Devices"
+        LastKnownLocation="Package11_2155.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="5537db5a-ad35-4ab7-bcca-2ccb59434a05"
+        LastKnownName="Storage"
+        LastKnownLocation="Package_1709.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="307d44fe-c8bc-46d4-a3fc-3a4ab602d6a1"
+        LastKnownName="Networking"
+        LastKnownLocation="Package3_1709.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

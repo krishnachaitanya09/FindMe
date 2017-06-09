@@ -1,0 +1,874 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="7dbb2735-c48c-477b-9f99-70bf74ddd990"
+  name="Controls"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="0ef633b8-07d6-4cb0-b48a-7d61a09105d3"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DGPSTracker.Controls"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="5bff98d8-690f-48a9-949f-180b4044d669"
+        name="OnlineStatusControl"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="52f2db54-2b35-442f-bf7e-4ca032ae7ad2"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2Fprojects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Controls Type%3DOnlineStatusControl"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2a02adff-bd33-4fbe-ab14-891048bbe88a"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8b1de6e7-f8d6-45cf-a625-e8dfdf5c6a00">
+                <propertyInstance
+                  Id="4e23105b-9e26-4522-a451-f441eefadd33"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e82e63f0-90ef-46c8-bd81-c3c4c948ed56">
+                <propertyInstance
+                  Id="75b08288-2847-47b7-bd70-66ebbd076083"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8f1ac277-ea71-4d64-89a6-0e69355e23ff">
+                <propertyInstance
+                  Id="6b22a5f9-d815-463c-b6b4-281145087ad3"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4734e873-e2a4-4c52-810a-ed4ab48ee848">
+                <propertyInstance
+                  Id="2f1230b8-86bc-4877-adf0-443ed5079e48"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cdb39e71-a475-4bf8-a763-67350a82f2c6">
+                <propertyInstance
+                  Id="f6899584-17b7-42b9-9df2-e9a337840ac6"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="d31cd340-654c-4510-833d-b593792a8dbf">
+            <interfaceMoniker
+              Id="63ffc372-f556-4330-94e5-47a3d6f70370"
+              LastKnownName="INotifyPropertyChanged"
+              LastKnownLocation="Package9_2155.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="19224c01-1c67-44a5-b2d9-37d41702788a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="667a25b8-c0e9-4abc-a666-d3ce92b20dc0"
+              LastKnownName="UserControl"
+              LastKnownLocation="Package4_2154.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="6e82f265-a65e-49aa-92e1-b3dec91dadee"
+            isDerived="false"
+            sourceEndRoleName="OnlineStatusControl"
+            targetEndRoleName="Color"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="13cf1a28-3997-47aa-9a00-57eaca01eecc"
+              LastKnownName="Brush"
+              LastKnownLocation="Package6_2155.uml" />
+            <description>Property Color references type Brush.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="49b7fe89-5700-43d4-b427-29eaf5bb54e0"
+                  name="OnlineStatusControl"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="6d5b0796-0c95-485c-a330-f3c8203e316f"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="3c5ec366-fdf1-4bba-b2e8-abc9657f8298"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b492b8bd-3578-41d9-85d1-70ae0cae4274"
+                  name="Color"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="275195c7-ecaa-4661-8c6a-dfb5ce823f4d"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="668b672c-90cc-4951-b8eb-c084cbb272b0"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="bba7594d-3f62-48ec-9c4d-961b39cd327c"
+            name="IsOnline"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="1f690b63-5a51-44a3-bb98-c8e97d468204"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2Fprojects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Controls Type%3DOnlineStatusControl Member%3DIsOnline"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a07d6264-cf35-478f-a111-34287668dbd2"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bed43801-ab4d-476a-b4ad-704d1e76180f">
+                    <propertyInstance
+                      Id="f2bc6a7c-93d2-4ae7-9222-762bfdbbdfc0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fac48f1c-da4b-4f25-8a96-66c3d6c2f25e">
+                    <propertyInstance
+                      Id="7c383b9f-4918-4285-bcab-2372b361b8a0"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d24e454-7543-4e43-a75c-75ee68d9973a">
+                    <propertyInstance
+                      Id="79a6bd18-db87-4880-91b9-78b947f77600"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a8c3d22-cf74-42a5-af6c-f180ee4c1dd6">
+                    <propertyInstance
+                      Id="0f69f3fa-8413-41f1-9654-877276de89c4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d91c8b62-b38c-4f04-b48c-19f5eebfb74d">
+                    <propertyInstance
+                      Id="60fdc41c-3258-4e7f-9c98-1672b1a33f4f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c2eedcdd-1eeb-4d2a-85e5-843893b12be3">
+                    <propertyInstance
+                      Id="aa6d4da2-25d4-4143-97f2-5ee834858422"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44bbe577-591b-4be6-8758-15fd0dc2290c">
+                    <propertyInstance
+                      Id="53a38746-4565-4e4c-b628-c03c94276e40"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="91a6efea-1e43-449d-ae47-69f43ca228f0"
+            name="Color"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="09f96d0d-b6e7-4ec1-be4a-c6ebab9f4ad6"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2Fprojects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Controls Type%3DOnlineStatusControl Member%3DColor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8f70eefd-9eba-4f9f-b13d-2113938dfaeb"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ac2a189-2ba8-413e-b1b7-e9588659ab44">
+                    <propertyInstance
+                      Id="af836ffa-46b1-463a-9b22-09198944657d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c8112909-69f2-4102-9e05-b3213c780530">
+                    <propertyInstance
+                      Id="c0bea9c3-7155-400c-91e5-55c10addd1ce"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de6c403a-cbf2-4bce-98d7-16c6a67dad5a">
+                    <propertyInstance
+                      Id="cc8d16ca-da0f-4fa4-8ef3-57a37cd008b5"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b48cde77-02a3-49d3-bdf7-79a1403bd267">
+                    <propertyInstance
+                      Id="816f793b-2723-4507-955c-037ff8c26c69"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f3e63da-f8c5-466f-a04f-f2d8f0abbb61">
+                    <propertyInstance
+                      Id="40988cb2-4e02-43f2-9ec5-2d8dc6bc3c74"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e0a859e-b0ba-4224-9234-cf88cbb341c0">
+                    <propertyInstance
+                      Id="15a15828-f40e-46c6-9111-42a80fc27342"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e98bce7-e214-4594-9894-089f9d3ed47e">
+                    <propertyInstance
+                      Id="3bc4eed2-8cde-4780-8f59-352e1de1a590"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="13cf1a28-3997-47aa-9a00-57eaca01eecc"
+                LastKnownName="Brush"
+                LastKnownLocation="Package6_2155.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="880ff36c-0f72-4db9-9622-1a4ec7f9ed65"
+            name="_isOnline"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="674193cc-e6cc-47fb-b375-9ef560815409"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2Fprojects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Controls Type%3DOnlineStatusControl Member%3D_isOnline"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="993a96d2-a80a-48a7-809e-191f5353112c"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="632e5163-6dbb-4215-a23b-c61a007249d7">
+                    <propertyInstance
+                      Id="9564428f-b830-4792-93ed-d4f0ebe9948c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5ce700a-7031-43d6-a74e-ca5cf692fc00">
+                    <propertyInstance
+                      Id="fa1b4648-5c81-4a95-b2e5-dc306ad22bde"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d52004b-900b-41a9-9aac-99506883f0b7">
+                    <propertyInstance
+                      Id="bc6e2eb4-474d-441b-86ba-15f28dde0030"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="149cc830-4e2e-43b2-8ee6-bcc03910898e">
+                    <propertyInstance
+                      Id="abf66362-3033-4091-a808-cfec0dfeea35"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b175158-1d87-4b72-a225-7648953a33b6">
+                    <propertyInstance
+                      Id="bc25af10-2fd2-464e-936d-3c5cb6296310"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="319a7694-6712-4257-860e-9605d5109dcc"
+            name="_color"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="8a053099-54a9-444f-9b7a-ebe81610b752"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2Fprojects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Controls Type%3DOnlineStatusControl Member%3D_color"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7bac76b1-d7cf-4688-9084-0dda8dc2620d"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2535c88f-8232-44f3-94c8-672708ace642">
+                    <propertyInstance
+                      Id="0a060294-eb5d-49a9-bd6c-f6966d656ebf"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="64fa5fd3-ac96-4357-ba54-496b44576987">
+                    <propertyInstance
+                      Id="183531a0-ab50-4693-991d-20337275dec5"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7cced360-7ebe-4165-8ae2-e03edb892f22">
+                    <propertyInstance
+                      Id="a232d7a0-f774-4059-9e35-762739c5a2a7"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1637bae0-aa78-4aab-8fb3-68c1d04b4cf5">
+                    <propertyInstance
+                      Id="55d46de4-03e1-455c-906e-518f0f13f3ec"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0cd951c0-79bd-4675-b634-2145a11dcca1">
+                    <propertyInstance
+                      Id="39cfbb9c-8bc4-49e9-8072-53cc4b88700d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="13cf1a28-3997-47aa-9a00-57eaca01eecc"
+                LastKnownName="Brush"
+                LastKnownLocation="Package6_2155.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="52f39dfe-6389-4988-9ef0-ef6ff3f42670"
+            name="PropertyChanged"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="b78860c6-008c-4b88-a6c6-eb0864317932"
+                handle="viewcode://./CodeSchema_Event?Assembly%3Dfile:%2F%2F%2FF:%2Fprojects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Controls Type%3DOnlineStatusControl Member%3DPropertyChanged"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c9c56dbf-bcd8-4eeb-8d2f-c91a16f27805"
+                name="event"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="407d6878-4ef3-4480-a557-bf476fd5bd44">
+                    <propertyInstance
+                      Id="e35c7612-33ae-46a0-a1a9-603676cfe0db"
+                      name="Add"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5bf9ae45-0afb-4aea-98f7-5e1ce17b8994">
+                    <propertyInstance
+                      Id="dc485997-2b28-43e4-ac38-b3b9d2839587"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb1d5a92-02d1-4ce1-a56e-7ff01dcc5c94">
+                    <propertyInstance
+                      Id="211fe6c5-aace-47f9-87c0-e705391286c2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="df26e638-36ac-4d98-ab9d-ec6a91c7fd23">
+                    <propertyInstance
+                      Id="b141ca9e-6fd9-4824-9132-4a1ecc85b2a6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1bcaa577-2996-4bc2-8f4f-4ae3fd8d27f7">
+                    <propertyInstance
+                      Id="c23ed110-aae8-4e45-b46c-7249f1da4688"
+                      name="Remove"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="84527825-f0fb-485b-ba8d-b0b7ad92286d"
+                LastKnownName="PropertyChangedEventHandler"
+                LastKnownLocation="Package9_2155.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="fcc476b6-e201-4f6f-9e02-e240be5d0d02"
+            name="LayoutRoot"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="85496ddd-6683-46b0-965a-0e6f053a1390"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2Fprojects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Controls Type%3DOnlineStatusControl Member%3DLayoutRoot"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="63a273e9-323c-4b9a-9f47-942522295d9e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ba986be-11f9-49a3-9955-bb450c132029">
+                    <propertyInstance
+                      Id="b1909c7c-9ccb-4432-8383-e434f8b7d93e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f14f6728-2cdc-48fe-be03-c3601cedce96">
+                    <propertyInstance
+                      Id="ba1ef942-d04f-4929-894b-ee203cee7f41"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="07816397-06b7-40cb-91e5-8a48ecc268d1">
+                    <propertyInstance
+                      Id="c1035a5e-a97a-402f-b71e-8fd1d7eaf13e"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e7bcb35d-46a2-4aff-b3e7-6a57dc035258">
+                    <propertyInstance
+                      Id="b225fd59-3b0e-4d34-928c-4c77c9f62117"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5b18e7dd-721f-4f44-b12b-07e8fc2353f1">
+                    <propertyInstance
+                      Id="c2562e93-f0a7-41ea-a9ca-d4825d38cacf"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="54f4c8cd-d9e1-44b1-a970-8a84092be9cf"
+                LastKnownName="Grid"
+                LastKnownLocation="Package4_2154.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="fade943d-f327-426d-b555-d87622c39b7f"
+            name="_contentLoaded"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="12dc4872-a6b6-4445-a015-9c14c2deaec9"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2Fprojects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Controls Type%3DOnlineStatusControl Member%3D_contentLoaded"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e921f715-a4f6-4f56-9376-b64f52271dac"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6987302f-233f-4be1-8564-9dff57fea52a">
+                    <propertyInstance
+                      Id="8f29461a-e752-4496-8fd8-faf8b00278c3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d03167dd-2861-443a-b347-c07b65890cbc">
+                    <propertyInstance
+                      Id="3061698e-40a6-4799-abee-fdb63b8c21e5"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="948543ac-ec3c-4dbd-a5d4-16cdc286abfd">
+                    <propertyInstance
+                      Id="749cc031-8c8f-4715-a189-53a64f8d6bb2"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a4a5acb-e457-485f-b9ff-8b05c50efdef">
+                    <propertyInstance
+                      Id="1b5a11c9-0460-404b-975d-dfcccb77eac5"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0e236002-2b7f-414b-b902-9ded91cca9e4">
+                    <propertyInstance
+                      Id="600818e3-1161-4164-89ea-f70d8d1efde0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="335bd90a-68cc-4a8f-8347-0ace0a1c50a6"
+            name="OnlineStatusControl"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="04afdf8a-2e5d-4aee-80f2-3d47d9574067"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2Fprojects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Controls Type%3DOnlineStatusControl Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ea2eb95e-7554-43b7-b2fb-96a71c7a526b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7dd69388-a54c-426f-b45f-4cf1a8ba5a18">
+                    <propertyInstance
+                      Id="3c794d11-3365-470f-ae5a-13b49fb4d92f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="93f60fc5-d81d-41ab-8e08-82d155d9b8af">
+                    <propertyInstance
+                      Id="db9b9978-1d5a-437b-8c77-d14cb4d08ed3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ce4f5be-e9af-49c5-9154-355c40f83543">
+                    <propertyInstance
+                      Id="ccfa0be8-9201-4e35-aeff-33eb4a9cfd07"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a86b7d3-d48d-48af-aaf3-8d404e2836d0">
+                    <propertyInstance
+                      Id="a8d92f13-c329-441a-bf06-175162b4c7d3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c59a594f-e90c-4015-a508-fd305fa019ab">
+                    <propertyInstance
+                      Id="d6afbc31-9211-4d15-a130-4cb73290d588"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab3961ef-052a-4091-abe2-12c553fdd4f6">
+                    <propertyInstance
+                      Id="e69a6a76-b6db-44e0-8a4f-a2540c7c9c11"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="8fdabe22-0300-4fb1-9599-e5d26c00f495"
+            name="NotifyPropertyChanged"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1251a5cf-efd3-44af-8a98-bf94263fcf53"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2Fprojects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Controls Type%3DOnlineStatusControl Member%3D(Name%3DNotifyPropertyChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="89972339-1dbf-4a94-926e-a7ed62d81272"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46685e6d-b127-4c54-a9c3-5579dcfb85d2">
+                    <propertyInstance
+                      Id="07baee79-8190-487e-9e30-e5c14dff098f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="93121384-3032-4891-9c4f-059c62c33879">
+                    <propertyInstance
+                      Id="3f4a2665-c2ed-45b2-a17f-5348164d9048"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c8a722e-5526-4a8e-8d98-0792086becbf">
+                    <propertyInstance
+                      Id="59b02273-922c-41d3-aea9-589c320a7b6c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="69313c19-8a1a-4ace-a745-1fb79a9bb786">
+                    <propertyInstance
+                      Id="04c4c074-32f0-4eb0-8b05-cf90cf2d3389"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7bd9ac28-3927-48db-b49f-8d8e1372fa72">
+                    <propertyInstance
+                      Id="79d1fd55-5176-4723-8f06-0b352b9c8d23"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45ce9745-a52d-41e1-968a-7d8790d49a49">
+                    <propertyInstance
+                      Id="1a2095f1-d46d-4698-b08a-0a148280604f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b0010318-d2e1-42d6-8bdc-dcbe136033e4"
+                  name="propertyName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="facdb153-931b-4476-bb48-0fd5cdb6befb"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2Fprojects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Controls Type%3DOnlineStatusControl Member%3D(Name%3DNotifyPropertyChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DpropertyName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5c275f60-fc1d-4bb7-ba4c-6b83259d97c0"
+            name="InitializeComponent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f319075a-6a9a-48dd-a9a7-fcc4158e0b00"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2Fprojects%2FGpsTracker%2FGpsTracker%2FGPSTracker%2FBin%2FDebug%2FGPSTracker.dll Namespace%3DGPSTracker.Controls Type%3DOnlineStatusControl Member%3DInitializeComponent"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2cd69395-acc6-4020-af11-06d5996522cf"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10263a45-f98a-4b78-8171-b879f21cbcfa">
+                    <propertyInstance
+                      Id="faa58f4f-9e12-4202-9828-a3698d400870"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8465e235-f609-4393-bfe8-4cbce6835619">
+                    <propertyInstance
+                      Id="b25e14b0-dee4-48d2-b0f2-b12037c2b5f3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3237933-de51-4aab-a759-0f46e3396d9b">
+                    <propertyInstance
+                      Id="45897868-a02e-40cc-b61b-de178bb98f42"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="50a1357e-16a1-4a90-bc3e-9e9f894a7ca7">
+                    <propertyInstance
+                      Id="e08f6b70-029a-486c-a475-c2999611295e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="67e9d6a5-7c87-4f33-803e-ecdadba054ab">
+                    <propertyInstance
+                      Id="fa0bac6c-9e2e-4c0e-9eac-9ab33b354607"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9d8072f-39b8-493f-9abd-b4ceec4e1dc6">
+                    <propertyInstance
+                      Id="6ce2911d-ba27-499c-9544-aff820d20eef"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
